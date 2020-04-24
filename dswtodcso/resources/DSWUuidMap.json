@@ -1,0 +1,185 @@
+{
+    "questions": [
+        {
+            "question": "DMP",
+            "uuid": {
+                        "title": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.73d301a0-7c22-4682-b0df-68c02af08ebb",
+                        "description": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.635e2a34-3825-4362-8a5f-ad2afd000b9e",
+                        "language": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.53d65bf8-8aad-4de7-b698-38fe641791e6",
+                        "created": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.f04b91f8-b423-4302-bc7c-6db9060d013b",
+                        "modified": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.ba1a7eb0-b390-4818-9da0-bfb1a9383547",
+                        "ethicalAnswer": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.b1ed0af2-bad2-41d3-b699-02246349bec1",
+                        "DMPIdentifier": {
+                            "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.92428580-748f-4c51-8ea3-c05b605d249e",
+                            "identifier": "e7ecc501-b029-4f4b-b4ae-b3473c75d637",
+                            "identifierType": "48a96932-cca6-4a42-9d1f-28b3d707e8bc"
+                        }
+                    }
+        },
+        {
+            "question": "Contact",
+            "uuid": 
+                    {
+                        "name": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.2d362b41-557f-40e8-be60-b60ed94120e2",
+                        "mbox": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.4ce81df0-1d95-422f-9498-3af59e096d3a",
+                        "contactIdentifier": {
+                            "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.fad9e449-1d11-437a-8a75-827a0570bd25",
+                            "identifier": "702f800f-c80f-470c-9336-b905e77d1749",
+                            "identifierType": "518868a5-ccad-49d2-b9cf-78cd81ad6dc9"
+                        }
+                    }
+        },
+        {
+            "question": "DMPStaff",
+            "uuid": {
+                        "DMPStaff": {
+                            "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.f8681d8e-b911-4837-9f8e-c05c298d19c2",
+                            "name": "0cad6866-1037-47a8-8fa6-7b31feecabbe",
+                            "email": "e41a0551-3f7b-43e6-be49-f69634473cb5",
+                            "contributionType": "4904b69a-0988-4559-b398-d0f4a6be2778",
+
+                            "staffIdentifier": {
+                                "quantity": "e61809ca-ee52-46bf-bb3d-bc026617adc4",
+                                "identifier": "8dd89501-6865-427a-bb29-a5cc47a1b4ac",
+                                "identifierType": "54d26b70-12dc-4341-9c01-a961d82bad34"
+                            }
+                            
+                        }
+                    }
+        },
+        {
+            "question": "Project",
+            "uuid":  
+                    {   
+                        "Project": {
+                            "quantity": "05d97e27-7391-4e9c-a357-e7d2e3afb102.12dc1e7f-93c4-4e51-84e2-65ca5374e167",
+                            "title": "555dad0b-438a-4cad-8b5d-746f4f7f7f7b",
+                            "description": "3f574aaa-a7cf-442f-bf6c-21fa9ba1b46d",
+                            "startDate": "35d01171-b5b0-48a4-9e8c-c21524a27ebe",
+                            "endDate": "3fc4db50-20b6-4814-990e-3bdadb43efa3",
+                            "Funding": {
+                                            "quantity": "0968dd1d-c3b3-471f-9c0d-da7baa818583",
+                                            "funder": {
+                                                "quantity": "bafb7dbc-209c-456e-939b-fcad0c62c68d",
+                                                "identifier": "96d4d905-618b-4f1b-858a-4ef8423a603b",
+                                                "type": "6eda007d-fcd6-445f-b0b4-9d1868a10775"
+                                            },
+                                            "fundingStatus": "c0196911-7228-4a63-9698-9b455584f988",
+                                            "grant": {
+                                                "quantity": "5119c098-8d76-4ef5-a7ad-00579e7904c8",
+                                                "identifier": "2b1f5762-3449-4c86-941f-9cc8f39f30a3",
+                                                "type": "b42683c5-2e8e-45c8-85f7-1a8f8c44c7cb"
+                                            }
+                            } 
+                        }
+                        
+                    }
+                    
+        },
+        {
+            "question": "Cost",
+            "uuid": 
+                    {
+                        "Cost": {
+                            "quantity": "05d97e27-7391-4e9c-a357-e7d2e3afb102.92c53099-9872-4890-909c-6aa5c89c6f84",
+                            "title": "7c1ec1f7-f18d-41ae-b8e5-d90363f34255",
+                            "description": "2df5d06e-abc6-4636-98f4-a433d8476346",
+                            "costValue": "c4dbc52a-76c4-41f7-90d3-d8785828eb67",
+                            "costUnit": "c64af56b-73c5-445c-8ced-5bab570ce7dd"
+                        }
+                    }
+        },
+        {
+            "question": "Dataset",
+            "uuid": 
+                    {
+                        "Dataset": {
+                            "quantity": "46e9f658-efc4-4619-a885-ffaebb4d21f4.59a81fef-d63b-4efe-b1bd-8aa5baf58e3f",
+                            "title": "9816d413-eb4d-4ec8-b948-b51f70a1766f",
+                            "description": "3bced250-17c9-466a-871d-8478dd1b21a1",
+                            "language": "43f4bc93-6f52-48ae-9c83-23becb9d8e00",
+                            "keywords": {
+                                "quantity": "30cbfbb0-e933-4b52-bc39-ebe72fce6180",
+                                "keyword": "de68c487-8ae4-4b88-b511-53d8db740c06"
+                            },
+                            
+                            "datasetType": "f869a7b6-1cf5-4418-bd5d-3b04d8680c16",
+                            "issued": "a0ac1dbd-6050-4c92-bd2a-bec7c99b458f",
+
+                            "datasetIdentifier": {
+                                "quantity": "82122c96-7121-44cd-8240-2b3c4ea01bb3",
+                                "identifier": "e84e0707-3be0-4928-a7b6-964aa18497ba",
+                                "identifierType": "5e5a581e-3cf3-413f-a96f-085175e0c0fa"
+                            },
+                            
+                            "preservationStatement": "11b1ecaf-58de-40fd-9f04-0ec1924099a6",
+                            "dataQualityAssurance": "1930ebb3-81ee-4e39-840f-7c49b69bdcaf",
+                            "personalData": "35c30d44-f741-4bea-9f1d-302d46af77a7",
+                            "sensitiveData": "bf632ebb-80c8-4303-a044-8a2fd08c9e81",
+
+                            "Metadata": {
+                                "quantity": "8c8c80cb-6266-484b-b831-9ddec20ced07",
+                                "metadataIdentifier": {
+                                    "quantity": "95846d36-85b4-491c-b9b5-296a05359e60",
+                                    "identidier": "73a34d1f-3874-47cc-897f-88bedc91d5bf",
+                                    "type": "ab422ac7-e437-4658-aff5-783edf9cbd71"
+                                },
+                                "language": "d04b9774-0d62-4a54-a1ab-e2fd22ef1c38",
+                                "description": "aed6a215-8fb0-4cf5-b77c-1ebeeecaa420"
+                            },
+
+                            "TechnicalResource": {
+                                "quantity": "e1f6c539-b9ef-4b0d-9bd7-7dc6aaf7cfdf",
+                                "identifier": {
+                                    "quantity": "53e32b2e-3b7a-4c21-baaf-ce5387f9f924",
+                                    "identifier": "038bc3ca-1007-42de-972a-9db7181ff906",
+                                    "type": "ded7aeeb-45de-4446-a3f0-87aa7509f08f"
+                                },
+                                
+                                "description": "9fb283f2-75fa-4697-b41b-d91d004ea71d"
+                            },
+                            
+                            "SecurityAndPrivacy": {
+                                "quantity": "4ef79141-7660-4f8b-8961-4788c4dcc5f2",
+                                "title": "1a8028e2-8028-4db1-afb7-cc70d5e5c690",
+                                "description": "f3224bb8-e63e-4d11-860d-22293b343abb"
+                            },
+                            
+                            "Distribution": {
+                                "quantity": "ad18a0cc-4075-4d78-9f2b-60e3824cdfa2",
+                                "title": "1fbd8ee7-b4c9-4411-869b-2cdb5de7a9c6",
+                                "description": "4a7d37c6-119f-4162-be46-9109f0525f17",
+                                "format": "b1899ae0-0b4a-4a06-9551-db655ecfe330",
+                                "byteSize": "ac58becc-b439-413d-bc01-d038f5f5dc8c",
+                                "accessURL": "8495da71-f0d6-440a-8fd3-50ca960abfec",
+                                "downloadURL": "06de417c-152c-4a70-a3f7-a779535ec00e",
+                                "dataAccess": "52977277-0b3b-4c46-a89c-df286c18e745",
+                                "availableTill": "a5d8efda-0d6d-4fb3-9c1e-51d2b1b83c1f",
+                                "Host": {
+                                    "quantity": "db488a86-9116-460e-8492-a99b07486079",
+                                    "title": "633ad583-53d4-4d5d-b692-527d1033ce62",
+                                    "description": "b84caaf1-94e4-412d-90b6-9f8d2c4d8e7a",
+                                    "hostIdentifier": {
+                                        "quantity": "f0af1270-0b5f-45b9-a4dd-3f1a9c57c36c",
+                                        "identifier": "b5ba1713-15b8-4e7c-b3df-ab1a57e86f13",
+                                        "type": "8569eaae-1ca8-4efb-babc-a17ac925b3b4"
+                                    },
+                                    "supportsVersioning": "f74d9335-add3-4f95-8d9b-ba0076df2c7e",
+                                    "backupType": "46634535-fa23-40bb-9126-71d046c13fd9",
+                                    "backupFrequency": "2242fa18-9723-4a98-8221-640b37ae3549",
+                                    "certifiedWith": "c7c7b9c2-fa42-4218-b520-e90d83f1868e",
+                                    "geoLocation": "ab80c2fa-464e-45d6-8a64-b42f8cf91ba2",
+                                    "PIDSystem": "6a0933ba-6315-4336-80bd-835d52afe13d"
+                                },
+                                "License": {
+                                    "quantity": "66364cf7-3d5d-4c7c-841b-f275aae693e7",
+                                    "reference": "a9a87104-46eb-4262-830e-19c56077f4cb",
+                                    "startDate": "29efd318-231f-4204-aba8-5c2569866e50"
+                                }
+                            }
+                        }
+                        
+                    }
+        }
+    ]
+}
