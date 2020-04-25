@@ -3,36 +3,42 @@
         {
             "question": "DMP",
             "uuid": {
-                        "title": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.73d301a0-7c22-4682-b0df-68c02af08ebb",
-                        "description": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.635e2a34-3825-4362-8a5f-ad2afd000b9e",
-                        "language": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.53d65bf8-8aad-4de7-b698-38fe641791e6",
-                        "created": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.f04b91f8-b423-4302-bc7c-6db9060d013b",
-                        "modified": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.ba1a7eb0-b390-4818-9da0-bfb1a9383547",
-                        "ethicalAnswer": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.b1ed0af2-bad2-41d3-b699-02246349bec1",
-                        "DMPIdentifier": {
-                            "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.92428580-748f-4c51-8ea3-c05b605d249e",
-                            "identifier": "e7ecc501-b029-4f4b-b4ae-b3473c75d637",
-                            "identifierType": "48a96932-cca6-4a42-9d1f-28b3d707e8bc"
+                        "DMP": {
+                            "quantity": "",
+                            "title": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.73d301a0-7c22-4682-b0df-68c02af08ebb",
+                            "description": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.635e2a34-3825-4362-8a5f-ad2afd000b9e",
+                            "language": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.53d65bf8-8aad-4de7-b698-38fe641791e6",
+                            "created": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.f04b91f8-b423-4302-bc7c-6db9060d013b",
+                            "modified": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.ba1a7eb0-b390-4818-9da0-bfb1a9383547",
+                            "ethicalAnswer": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.b1ed0af2-bad2-41d3-b699-02246349bec1",
+                            "DMPIdentifier": {
+                                "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.92428580-748f-4c51-8ea3-c05b605d249e",
+                                "identifier": "e7ecc501-b029-4f4b-b4ae-b3473c75d637",
+                                "identifierType": "48a96932-cca6-4a42-9d1f-28b3d707e8bc"
+                            }
                         }
                     }
         },
         {
             "question": "Contact",
             "uuid": 
-                    {
-                        "name": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.2d362b41-557f-40e8-be60-b60ed94120e2",
-                        "mbox": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.4ce81df0-1d95-422f-9498-3af59e096d3a",
-                        "contactIdentifier": {
-                            "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.fad9e449-1d11-437a-8a75-827a0570bd25",
-                            "identifier": "702f800f-c80f-470c-9336-b905e77d1749",
-                            "identifierType": "518868a5-ccad-49d2-b9cf-78cd81ad6dc9"
+                    {   
+                        "Contact": {
+                            "quantity": "",
+                            "name": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.2d362b41-557f-40e8-be60-b60ed94120e2",
+                            "mbox": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.4ce81df0-1d95-422f-9498-3af59e096d3a",
+                            "contactIdentifier": {
+                                "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.fad9e449-1d11-437a-8a75-827a0570bd25",
+                                "identifier": "702f800f-c80f-470c-9336-b905e77d1749",
+                                "identifierType": "518868a5-ccad-49d2-b9cf-78cd81ad6dc9"
+                            }
                         }
                     }
         },
         {
-            "question": "DMPStaff",
+            "question": "DMStaff",
             "uuid": {
-                        "DMPStaff": {
+                        "DMStaff": {
                             "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.f8681d8e-b911-4837-9f8e-c05c298d19c2",
                             "name": "0cad6866-1037-47a8-8fa6-7b31feecabbe",
                             "email": "e41a0551-3f7b-43e6-be49-f69634473cb5",
@@ -130,7 +136,7 @@
 
                             "TechnicalResource": {
                                 "quantity": "e1f6c539-b9ef-4b0d-9bd7-7dc6aaf7cfdf",
-                                "identifier": {
+                                "technicalResourceIdentifier": {
                                     "quantity": "53e32b2e-3b7a-4c21-baaf-ce5387f9f924",
                                     "identifier": "038bc3ca-1007-42de-972a-9db7181ff906",
                                     "type": "ded7aeeb-45de-4446-a3f0-87aa7509f08f"

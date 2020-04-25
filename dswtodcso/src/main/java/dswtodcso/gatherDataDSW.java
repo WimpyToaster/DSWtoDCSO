@@ -49,9 +49,18 @@ public class gatherDataDSW {
     public static void getValueFromObject(String attributeName, JSONObject obj, String previousPath, 
     Map<String, List<JSONObject>> valuesMap, Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels) { 
         String initialPath;
+        Boolean noQuantity = false;
 
         if (previousPath.isEmpty()) {
-            initialPath = obj.get("quantity").toString();
+            if (obj.containsKey("quantity")) {
+                if (obj.get("quantity").toString().isEmpty()) {
+                    noQuantity = true;
+                }
+                initialPath = obj.get("quantity").toString();
+            } else {
+                initialPath = "";
+            }
+            
         }
         else{
             initialPath = previousPath + "." + obj.get("quantity").toString();
@@ -61,18 +70,22 @@ public class gatherDataDSW {
 
         List<JSONObject> valuesMapList = new ArrayList<>();
 
-        int quantity = Integer.parseInt(DSWReplies.get(initialPath).get("value").toString());
+        int quantity = 0;
 
-        for (int j = 0; j < quantity; j++) {
+        if (!initialPath.isEmpty()) {
+            quantity = Integer.parseInt(DSWReplies.get(initialPath).get("value").toString());
+        }
+        
+        if (noQuantity) {
             JSONObject valuesJSON = new JSONObject();
             
             for(String attribute : propertyAttributes) {
                 if (!attribute.equals("quantity")) {
                     if (obj.get(attribute) instanceof String) {
-                        updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);               
+                        updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath, valuesJSON, DSWReplies, requiredLevels);               
                     }
                     else {
-                        updateJSONValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);
+                        updateJSONValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath, valuesJSON, DSWReplies, requiredLevels);
                     }
                 }
             }
@@ -80,6 +93,26 @@ public class gatherDataDSW {
             valuesMapList.add(valuesJSON);
 
             valuesMap.put(attributeName, valuesMapList);
+        } else {
+
+            for (int j = 0; j < quantity; j++) {
+                JSONObject valuesJSON = new JSONObject();
+                
+                for(String attribute : propertyAttributes) {
+                    if (!attribute.equals("quantity")) {
+                        if (obj.get(attribute) instanceof String) {
+                            updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);               
+                        }
+                        else {
+                            updateJSONValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);
+                        }
+                    }
+                }
+    
+                valuesMapList.add(valuesJSON);
+    
+                valuesMap.put(attributeName, valuesMapList);
+            }
         }
     }
 
@@ -93,9 +126,17 @@ public class gatherDataDSW {
     public static void updateJSONValueFromObject(String attributeName, JSONObject obj, String previousPath, 
     JSONObject values, Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels) { 
         String initialPath;
+        Boolean noQuantity = false;
 
         if (previousPath.isEmpty()) {
-            initialPath = obj.get("quantity").toString();
+            if (obj.containsKey("quantity")) {
+                if (obj.get("quantity").toString().isEmpty()) {
+                    noQuantity = true;
+                }
+                initialPath = obj.get("quantity").toString();
+            } else {
+                initialPath = "";
+            }
         }
         else{
             initialPath = previousPath + "." + obj.get("quantity").toString();
@@ -105,18 +146,22 @@ public class gatherDataDSW {
 
         List<JSONObject> valuesMapList = new ArrayList<>();
 
-        int quantity = Integer.parseInt(DSWReplies.get(initialPath).get("value").toString());
+        int quantity = 0;
+        
+        if (!initialPath.isEmpty()) {
+            quantity = Integer.parseInt(DSWReplies.get(initialPath).get("value").toString());
+        }
 
-        for (int j = 0; j < quantity; j++) {
+        if (noQuantity) {
             JSONObject valuesJSON = new JSONObject();
             
             for(String attribute : propertyAttributes) {
                 if (!attribute.equals("quantity")) {
                     if (obj.get(attribute) instanceof String) {
-                        updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);               
+                        updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath, valuesJSON, DSWReplies, requiredLevels);               
                     }
                     else {
-                        getValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);
+                        getValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath, valuesJSON, DSWReplies, requiredLevels);
                     }
                 }
             }
@@ -124,6 +169,26 @@ public class gatherDataDSW {
             valuesMapList.add(valuesJSON);
 
             values.put(attributeName, valuesMapList);
+        } else {
+
+            for (int j = 0; j < quantity; j++) {
+                JSONObject valuesJSON = new JSONObject();
+                
+                for(String attribute : propertyAttributes) {
+                    if (!attribute.equals("quantity")) {
+                        if (obj.get(attribute) instanceof String) {
+                            updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);               
+                        }
+                        else {
+                            getValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);
+                        }
+                    }
+                }
+    
+                valuesMapList.add(valuesJSON);
+    
+                values.put(attributeName, valuesMapList);
+            }
         }
     }
 
@@ -149,7 +214,6 @@ public class gatherDataDSW {
             if (requiredLevels.get(attributePath) != null) {
                 if (!requiredLevels.get(attributePath).isEmpty()) {
                     System.out.println("The attribute " + attributeName + " is required and is missing");
-                    System.exit(1);
                 }
             }
             valuesJSON.put(attributeName, "");

@@ -75,7 +75,7 @@ public class App
             Map<String, Map<String, List<JSONObject>>> replies = new HashMap<>();
             replies.put("DMP", gatherDataDSW.getRepliesFormCategory("DMP", pathsReplies, DSWReplies, requiredLevels));
             replies.put("Contact", gatherDataDSW.getRepliesFormCategory("Contact", pathsReplies, DSWReplies, requiredLevels));
-            replies.put("DMPStaff", gatherDataDSW.getRepliesFormCategory("DMPStaff", pathsReplies, DSWReplies, requiredLevels));
+            replies.put("DMStaff", gatherDataDSW.getRepliesFormCategory("DMStaff", pathsReplies, DSWReplies, requiredLevels));
             replies.put("Project", gatherDataDSW.getRepliesFormCategory("Project", pathsReplies, DSWReplies, requiredLevels));
             replies.put("Cost", gatherDataDSW.getRepliesFormCategory("Cost", pathsReplies, DSWReplies, requiredLevels));
             replies.put("Dataset", gatherDataDSW.getRepliesFormCategory("Dataset", pathsReplies, DSWReplies, requiredLevels));
@@ -84,6 +84,7 @@ public class App
             //     System.out.println(replies.get(cat));
             //     System.out.println("");
             // }
+            
             
 
             File ontologyFile = new File("dswtodcso/resources/rda-common-dmp.1.1.2.owl");
@@ -175,19 +176,102 @@ public class App
 
         IRI ontologyIRI = ontology.getOntologyID().getOntologyIRI().get();
 
+        int id = 0;
+        String indName;
+
         for(String cat : replies.keySet()) {
-
             for(String elem : replies.get(cat).keySet()) {
-                
+                if (replies.get(cat).get(elem) instanceof List) {
+                    int quantity = replies.get(cat).get(elem).size();
+                    OWLClass indClass;
+
+                    if ( isIdentifier(replies.get(cat).get(elem)) ) {
+                        indClass = classesMap.get("TypeIdentifier");
+                    } else {
+                        indClass = classesMap.get(elem);
+                    }
+
+                    if (indClass != null) {
+                        for(int i = 0; i < quantity; ++i) {
+                            indName = elem + id;
+                            IRI indIRI = IRI.create(ontologyIRI.toString() + "#" + indName);
+                            id++;
+    
+                            System.out.println("Ind: IRI= " + indIRI + " class= " + indClass);
+                            System.out.println("");
+    
+                            Ontology.createIndividual(ontology, manager, indIRI, indClass);
+    
+                            createIndInsideElem(ontology, manager, classesMap, replies.get(cat).get(elem).get(i), indName);
+                        }
+                    }
+                }
             }
-
-            IRI indIRI = IRI.create(ontologyIRI.toString() + "#");
-
-            System.out.println("Ind: IRI= " + indIRI + " class= " + classesMap.get(cat));
-            System.out.println("");
-
-            Ontology.createIndividual(ontology, manager, indIRI, classesMap.get(cat));
         }
+    }
+
+    /**
+     * Verify if a Individual is a Identifier
+     * @param elem
+     * @return
+     */
+    public static Boolean isIdentifier(List<JSONObject> elem) {
+        Boolean isIdent = false;
+        for (JSONObject obj : elem) {
+            if (obj.containsKey("identifier")) {
+                isIdent = true;
+            }
+        }
+        return isIdent;
+    }
+
+    /**
+     * Creates the individuals recursively
+     * @param ontology
+     * @param manager
+     * @param classesMap
+     * @param elem
+     * @param id
+     */
+    public static void createIndInsideElem(OWLOntology ontology, OWLOntologyManager manager, Map<String, OWLClass> classesMap, 
+    JSONObject elem, String parentName) {
+        IRI ontologyIRI = ontology.getOntologyID().getOntologyIRI().get();
+        Set<String> attributes = elem.keySet();
+        int id = 0;
+        String indName;
+
+        for(String attribute : attributes) {
+
+            if (elem.get(attribute) instanceof List) {
+                List<JSONObject> attributeList = (List<JSONObject>) elem.get(attribute);
+
+                int quantity = attributeList.size();
+                OWLClass indClass;
+    
+                if ( isIdentifier(attributeList) ) {
+                    indClass = classesMap.get("TypeIdentifier");
+                } else {
+                    indClass = classesMap.get(attribute);
+                }
+                
+                if (indClass != null) {
+                    for(int i = 0; i < quantity; ++i) {
+                        indName = parentName + attribute + id;
+                        IRI indIRI = IRI.create(ontologyIRI.toString() + "#" + indName);
+                        id++;
+        
+                        System.out.println("Ind: IRI= " + indIRI + " class= " + indClass);
+                        System.out.println("");
+        
+                        Ontology.createIndividual(ontology, manager, indIRI, indClass);
+        
+                        createIndInsideElem(ontology, manager, classesMap, attributeList.get(i), indName);
+                    }
+                }
+            }
+        }
+
+        
 
     }
 
