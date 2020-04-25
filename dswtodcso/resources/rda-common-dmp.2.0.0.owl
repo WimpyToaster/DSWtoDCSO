@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#"
      xml:base="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -19,12 +19,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasCrossReference -->
-
 
     <owl:AnnotationProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasCrossReference"/>
     
@@ -38,12 +36,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#certified_with_values -->
-
 
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#certified_with_values">
         <owl:equivalentClass>
@@ -105,7 +101,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id_type_values -->
 
-
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id_type_values">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -142,7 +137,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataAccessVocabulary -->
 
-
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataAccessVocabulary">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -173,7 +167,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id_type_values -->
 
-
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id_type_values">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -203,7 +196,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#fundingStatusVocabulary -->
-
 
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#fundingStatusVocabulary">
         <owl:equivalentClass>
@@ -240,7 +232,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-3166-1-alpha2 -->
-
 
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-3166-1-alpha2">
         <owl:equivalentClass>
@@ -1748,7 +1739,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-4217-code -->
 
-
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-4217-code">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -2834,7 +2824,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso639-3_values -->
-
 
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso639-3_values">
         <owl:equivalentClass>
@@ -3952,7 +3941,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#pid_system_values -->
 
-
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#pid_system_values">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -4078,7 +4066,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#role_values -->
-
 
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#role_values">
         <owl:equivalentClass>
@@ -4218,7 +4205,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#simple_type_values -->
 
-
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#simple_type_values">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -4242,7 +4228,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#type_values -->
-
 
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#type_values">
         <owl:equivalentClass>
@@ -4286,7 +4271,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#yesNoUnknownVocabulary -->
 
-
     <rdfs:Datatype rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#yesNoUnknownVocabulary">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -4323,12 +4307,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id"/>
@@ -4338,7 +4320,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasContact -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasContact">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
@@ -4350,7 +4331,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasContact_id -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasContact_id">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact_id"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact"/>
@@ -4359,7 +4339,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasContributor -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasContributor">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
@@ -4370,7 +4349,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasContributor_id -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasContributor_id">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor"/>
@@ -4379,7 +4357,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasCost -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasCost">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
@@ -4390,7 +4367,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasDataset -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasDataset">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
@@ -4399,7 +4375,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasDataset_id -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasDataset_id">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset_id"/>
@@ -4410,7 +4385,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasDistribution -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasDistribution">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
@@ -4420,17 +4394,15 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasDmp_id -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasDmp_id">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp_id"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
-        <rdfs:comment>Provides a TypeIdentifier for a DMP</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides a TypeIdentifier for a DMP</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasFunding -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasFunding">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project"/>
@@ -4441,7 +4413,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasGrant_id -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasGrant_id">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#grant_id"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
@@ -4450,7 +4421,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasHost -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasHost">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
@@ -4461,7 +4431,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasLicence -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasLicence">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#license"/>
@@ -4470,7 +4439,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasMetadata_standard -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasMetadata_standard">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
@@ -4481,7 +4449,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasMetadata_standard_id -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasMetadata_standard_id">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#metadata_standard_id"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#metadata_standard"/>
@@ -4490,7 +4457,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasProject -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasProject">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
@@ -4501,7 +4467,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasSecurity_and_privacy -->
 
-
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasSecurity_and_privacy">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#security_and_privacy"/>
@@ -4510,7 +4475,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasTechnical_resource -->
-
 
     <owl:ObjectProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#hasTechnical_resource">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
@@ -4527,12 +4491,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#access_url -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#access_url">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
@@ -4544,7 +4506,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#availability -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#availability">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4553,7 +4514,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#available_until -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#available_until">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
@@ -4564,7 +4524,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#backup_frequency -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#backup_frequency">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4574,7 +4533,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#backup_type -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#backup_type">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4583,7 +4541,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#byte_size -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#byte_size">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
@@ -4595,7 +4552,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#certified_with -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#certified_with">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#certified_with_values"/>
@@ -4604,7 +4560,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#created -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#created">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
@@ -4616,7 +4571,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#currency_code -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#currency_code">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-4217-code"/>
@@ -4625,7 +4579,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataAccess -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataAccess">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
@@ -4636,7 +4589,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#data_quality_assurance -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#data_quality_assurance">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4645,7 +4597,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#description -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#description">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
@@ -4665,7 +4616,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#download_url -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#download_url">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -4676,7 +4626,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#end -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#end">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -4685,7 +4634,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#ethical_issues_description -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#ethical_issues_description">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
@@ -4696,7 +4644,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#ethical_issues_exist -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#ethical_issues_exist">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#yesNoUnknownVocabulary"/>
@@ -4706,7 +4653,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#ethical_issues_report -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#ethical_issues_report">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -4715,7 +4661,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#format -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#format">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
@@ -4727,7 +4672,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding_status -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding_status">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#fundingStatusVocabulary"/>
@@ -4736,7 +4680,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#geo_location -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#geo_location">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
@@ -4747,7 +4690,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#identifier -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#identifier">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/identifier</hasCrossReference>
@@ -4757,7 +4699,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#identifier_type -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#identifier_type">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
@@ -4765,7 +4706,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#issued -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#issued">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
@@ -4777,7 +4717,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#keyword -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#keyword">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4787,7 +4726,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#language -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#language">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
@@ -4800,7 +4738,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#licence_ref -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#licence_ref">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#license"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -4810,7 +4747,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#mbox -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#mbox">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact"/>
@@ -4823,7 +4759,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#modified -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#modified">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -4833,7 +4768,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#name -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#name">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact"/>
@@ -4847,7 +4781,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#personal_data -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#personal_data">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#yesNoUnknownVocabulary"/>
@@ -4856,7 +4789,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#pid_system -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#pid_system">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
@@ -4867,7 +4799,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#preservation_statement -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#preservation_statement">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4876,7 +4807,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#report -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#report">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
@@ -4887,7 +4817,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#role -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#role">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#role_values"/>
@@ -4896,7 +4825,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#sensitive_data -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#sensitive_data">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
@@ -4907,7 +4835,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#start -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#start">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -4916,7 +4843,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#start_date -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#start_date">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#license"/>
@@ -4927,7 +4853,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#storage_type -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#storage_type">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4937,7 +4862,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#support_versioning -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#support_versioning">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
         <rdfs:range rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#yesNoUnknownVocabulary"/>
@@ -4946,7 +4870,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#title -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#title">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
@@ -4964,7 +4887,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#type -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#type">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4974,7 +4896,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#url -->
 
-
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#url">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -4983,7 +4904,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#value -->
-
 
     <owl:DatatypeProperty rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#value">
         <rdfs:domain rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
@@ -5000,12 +4920,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact">
         <rdfs:subClassOf>
@@ -5028,7 +4946,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact_id -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5049,7 +4966,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor">
         <rdfs:subClassOf>
@@ -5079,7 +4995,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5100,7 +5015,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost">
         <rdfs:subClassOf>
@@ -5136,7 +5050,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset">
         <rdfs:subClassOf>
@@ -5207,7 +5120,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset_id -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5221,7 +5133,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution">
         <rdfs:subClassOf>
@@ -5285,7 +5196,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp">
         <rdfs:subClassOf>
@@ -5364,7 +5274,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp_id -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5385,7 +5294,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id">
         <rdfs:subClassOf>
@@ -5408,7 +5316,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5422,7 +5329,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#grant_id -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#grant_id">
         <rdfs:subClassOf>
@@ -5444,7 +5350,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host">
         <rdfs:subClassOf>
@@ -5528,7 +5433,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#license -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#license">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5549,7 +5453,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#metadata_standard -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#metadata_standard">
         <rdfs:subClassOf>
@@ -5572,7 +5475,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#metadata_standard_id -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#metadata_standard_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5593,7 +5495,6 @@
 
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project -->
-
 
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project">
         <rdfs:subClassOf>
@@ -5630,7 +5531,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#security_and_privacy -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#security_and_privacy">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5652,7 +5552,6 @@
 
     <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#technical_resource -->
 
-
     <owl:Class rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#technical_resource">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5669,436 +5568,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact16 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact16">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact16contact_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact16contact_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contact_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor2 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor2contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor2contributor_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor3 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor3">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor3contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor3contributor_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor4 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor4">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor4contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor4contributor_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor5 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor5">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor5contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor5contributor_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor6 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor6">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor6contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor6contributor_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#contributor_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost10 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost10">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost11 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost11">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost12 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost12">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost13 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost13">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost14 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost14">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost15 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost15">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#cost"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8dataset_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8dataset_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8distribution3 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8distribution3">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8distribution3host0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8distribution3host0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#host"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8security_and_privacy1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8security_and_privacy1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#security_and_privacy"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8technical_resource2 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset8technical_resource2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#technical_resource"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9metadata_standard0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9metadata_standard0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#metadata_standard"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9metadata_standard0metadata_standard_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9metadata_standard0metadata_standard_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#metadata_standard_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9technical_resource1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9technical_resource1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#technical_resource"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9technical_resource2 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataset9technical_resource2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#technical_resource"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp7 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp7">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp7dmp_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp7dmp_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding0funder_id1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding0funder_id1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding0grant_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding0grant_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#grant_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding1funder_id1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding1funder_id1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding1grant_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding1grant_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#grant_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding2 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding2funder_id1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding2funder_id1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding2grant_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding2grant_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#grant_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0funder_id1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0funder_id1">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0funder_id2 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0funder_id2">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funder_id"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0grant_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0grant_id0">
-        <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#grant_id"/>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.4) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 

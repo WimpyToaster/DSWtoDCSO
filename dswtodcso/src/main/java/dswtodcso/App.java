@@ -87,7 +87,7 @@ public class App
             
             
 
-            File ontologyFile = new File("dswtodcso/resources/rda-common-dmp.1.1.2.owl");
+            File ontologyFile = new File("dswtodcso/resources/rda-common-dmp.2.0.0.owl");
 
             OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
             OWLOntology ontology = Ontology.importOntology(ontologyFile, manager);
@@ -183,13 +183,7 @@ public class App
             for(String elem : replies.get(cat).keySet()) {
                 if (replies.get(cat).get(elem) instanceof List) {
                     int quantity = replies.get(cat).get(elem).size();
-                    OWLClass indClass;
-
-                    if ( isIdentifier(replies.get(cat).get(elem)) ) {
-                        indClass = classesMap.get("TypeIdentifier");
-                    } else {
-                        indClass = classesMap.get(elem);
-                    }
+                    OWLClass indClass = classesMap.get(elem);
 
                     if (indClass != null) {
                         for(int i = 0; i < quantity; ++i) {
@@ -246,13 +240,8 @@ public class App
                 List<JSONObject> attributeList = (List<JSONObject>) elem.get(attribute);
 
                 int quantity = attributeList.size();
-                OWLClass indClass;
-    
-                if ( isIdentifier(attributeList) ) {
-                    indClass = classesMap.get("TypeIdentifier");
-                } else {
-                    indClass = classesMap.get(attribute);
-                }
+                OWLClass indClass = classesMap.get(attribute);
+
                 
                 if (indClass != null) {
                     for(int i = 0; i < quantity; ++i) {
