@@ -5895,7 +5895,9 @@
         <data_quality_assurance>RIM and DIM for RNA and DNA QC</data_quality_assurance>
         <description>Quality Control of DNA and RNA</description>
         <issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></issued>
+        <personal_data>No</personal_data>
         <preservation_statement>Keep record</preservation_statement>
+        <sensitive_data>No</sensitive_data>
         <title>Quality Check QC</title>
         <type>http://purl.org/coar/resource_type/c_18gh</type>
     </owl:NamedIndividual>
@@ -5918,6 +5920,7 @@
         <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#distribution"/>
         <access_url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"></access_url>
         <available_until rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-01T00:00:00</available_until>
+        <dataAccess>Shared</dataAccess>
         <description>Files will be stored in xls and pfd in the storage server (AFS)</description>
         <download_url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"></download_url>
         <format>application/pdf</format>
@@ -5935,6 +5938,7 @@
         <backup_type>hard drive</backup_type>
         <description>Storage server (AFS) managed by IGC IT</description>
         <geo_location>PT</geo_location>
+        <support_versioning>No</support_versioning>
         <title></title>
     </owl:NamedIndividual>
     
@@ -5969,7 +5973,9 @@
         <data_quality_assurance>CRC checksum</data_quality_assurance>
         <description>Fastq files of DNA/RNA sequencing</description>
         <issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></issued>
+        <personal_data>No</personal_data>
         <preservation_statement>The data will stay storage because users can always request it.</preservation_statement>
+        <sensitive_data>No</sensitive_data>
         <title>DNA &amp; RNA fastq</title>
         <type>http://purl.org/coar/resource_type/c_18gh</type>
     </owl:NamedIndividual>
@@ -6022,6 +6028,7 @@
         <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dmp"/>
         <created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-18T00:00:00</created>
         <description>This DMP serves to characterize the functioning of the Unidade de Genómica at the Instituto Gulbenkian para a Ciência in Oeiras.</description>
+        <ethical_issues_exist>Unknown</ethical_issues_exist>
         <modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-18T00:00:00</modified>
         <title>Unidade de Genómica</title>
     </owl:NamedIndividual>
@@ -6055,6 +6062,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding0">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
+        <funding_status>Granted</funding_status>
     </owl:NamedIndividual>
     
 
@@ -6082,6 +6090,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding1">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
+        <funding_status>Granted</funding_status>
     </owl:NamedIndividual>
     
 
@@ -6109,6 +6118,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project0funding2">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
+        <funding_status>Granted</funding_status>
     </owl:NamedIndividual>
     
 
@@ -6149,6 +6159,7 @@
 
     <owl:NamedIndividual rdf:about="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#project1funding0">
         <rdf:type rdf:resource="https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#funding"/>
+        <funding_status>Granted</funding_status>
     </owl:NamedIndividual>
     
 

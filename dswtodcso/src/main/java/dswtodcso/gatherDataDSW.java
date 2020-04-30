@@ -16,7 +16,7 @@ public class gatherDataDSW {
 	 * @param category What Category to get values (from DMP, Contact, DMPStaff, Project, Cost and Dataset)
 	 */
     public static Map<String, List<JSONObject>> getRepliesFormCategory(String category, Map<String, 
-    JSONObject> pathsReplies, Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels) {
+    JSONObject> pathsReplies, Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels, JSONObject answerReply) {
         
         Map<String, List<JSONObject>> replyValues = new HashMap<>();
         
@@ -27,14 +27,12 @@ public class gatherDataDSW {
 
         for (String attribute : attributes) {
             if (obj.get(attribute) instanceof String) {
-                getValueFromPath(attribute, obj.get(attribute).toString(), "", replyValues, DSWReplies);                
+                getValueFromPath(attribute, obj.get(attribute).toString(), "", replyValues, DSWReplies, answerReply);                
             }
             else {
-                getValueFromObject(attribute, (JSONObject) obj.get(attribute), "", replyValues, DSWReplies, requiredLevels);
+                getValueFromObject(attribute, (JSONObject) obj.get(attribute), "", replyValues, DSWReplies, requiredLevels, answerReply);
             }
         }
-
-        //System.out.println(replyValues);
         return replyValues;
     }
 
@@ -47,7 +45,7 @@ public class gatherDataDSW {
      * @param valuesMap Map that will be updated
      */
     public static void getValueFromObject(String attributeName, JSONObject obj, String previousPath, 
-    Map<String, List<JSONObject>> valuesMap, Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels) { 
+    Map<String, List<JSONObject>> valuesMap, Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels, JSONObject answerReply) { 
         String initialPath;
         Boolean noQuantity = false;
 
@@ -82,10 +80,10 @@ public class gatherDataDSW {
             for(String attribute : propertyAttributes) {
                 if (!attribute.equals("quantity")) {
                     if (obj.get(attribute) instanceof String) {
-                        updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath, valuesJSON, DSWReplies, requiredLevels);               
+                        updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath, valuesJSON, DSWReplies, requiredLevels, answerReply);               
                     }
                     else {
-                        updateJSONValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath, valuesJSON, DSWReplies, requiredLevels);
+                        updateJSONValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath, valuesJSON, DSWReplies, requiredLevels, answerReply);
                     }
                 }
             }
@@ -101,10 +99,10 @@ public class gatherDataDSW {
                 for(String attribute : propertyAttributes) {
                     if (!attribute.equals("quantity")) {
                         if (obj.get(attribute) instanceof String) {
-                            updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);               
+                            updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels, answerReply);               
                         }
                         else {
-                            updateJSONValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);
+                            updateJSONValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels, answerReply);
                         }
                     }
                 }
@@ -124,7 +122,7 @@ public class gatherDataDSW {
      * @param values JSONObject that will be updated
      */
     public static void updateJSONValueFromObject(String attributeName, JSONObject obj, String previousPath, 
-    JSONObject values, Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels) { 
+    JSONObject values, Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels, JSONObject answerReply) { 
         String initialPath;
         Boolean noQuantity = false;
 
@@ -158,10 +156,10 @@ public class gatherDataDSW {
             for(String attribute : propertyAttributes) {
                 if (!attribute.equals("quantity")) {
                     if (obj.get(attribute) instanceof String) {
-                        updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath, valuesJSON, DSWReplies, requiredLevels);               
+                        updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath, valuesJSON, DSWReplies, requiredLevels, answerReply);               
                     }
                     else {
-                        getValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath, valuesJSON, DSWReplies, requiredLevels);
+                        getValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath, valuesJSON, DSWReplies, requiredLevels, answerReply);
                     }
                 }
             }
@@ -177,10 +175,10 @@ public class gatherDataDSW {
                 for(String attribute : propertyAttributes) {
                     if (!attribute.equals("quantity")) {
                         if (obj.get(attribute) instanceof String) {
-                            updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);               
+                            updateJSONValueFromPath(attribute, obj.get(attribute).toString(), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels, answerReply);               
                         }
                         else {
-                            getValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels);
+                            getValueFromObject(attribute, (JSONObject) obj.get(attribute), initialPath + "." + j, valuesJSON, DSWReplies, requiredLevels, answerReply);
                         }
                     }
                 }
@@ -200,7 +198,7 @@ public class gatherDataDSW {
      * @param valuesJSON JSONObject that will be updated
      */
     public static void updateJSONValueFromPath(String attributeName, String attributePath, String previousPath, JSONObject valuesJSON,
-    Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels) {
+    Map<String, JSONObject> DSWReplies, Map<String, String> requiredLevels, JSONObject answerReply) {
         JSONObject value;
 
         if (previousPath.isEmpty()) {
@@ -218,7 +216,11 @@ public class gatherDataDSW {
             }
             valuesJSON.put(attributeName, "");
         } else {
-            valuesJSON.put(attributeName, value.get("value").toString());
+            if (answerReply.containsKey(value.get("value").toString())) {
+                valuesJSON.put(attributeName, answerReply.get(value.get("value").toString()));
+            } else {
+                valuesJSON.put(attributeName, value.get("value").toString());
+            }
         }
         
     }
@@ -231,7 +233,7 @@ public class gatherDataDSW {
      * @param valuesList JSONObject that will be updated
      */
     public static void getValueFromPath(String attributeName, String attributePath, String previousPath, Map<String, List<JSONObject>> values,
-    Map<String, JSONObject> DSWReplies) {
+    Map<String, JSONObject> DSWReplies, JSONObject answerReply) {
         JSONObject value;
 
         if (previousPath.isEmpty()) {
@@ -242,7 +244,12 @@ public class gatherDataDSW {
         }
 
         JSONObject valuesMap = new JSONObject();
-        valuesMap.put(attributeName, value.get("value").toString());
+
+        if (answerReply.containsKey(value.get("value").toString())) {
+            valuesMap.put(attributeName, answerReply.get(value.get("value").toString()));
+        } else {
+            valuesMap.put(attributeName, value.get("value").toString());
+        }
 
         List<JSONObject> valuesMapList = new ArrayList<>();
         valuesMapList.add(valuesMap);

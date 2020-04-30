@@ -41,6 +41,7 @@ import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.vocab.OWL2Datatype;
 
 import OntologyOperations.*;
+import Utils.Utils;
 import uk.ac.manchester.cs.owl.owlapi.OWL2DatatypeImpl;
 
 
@@ -79,6 +80,8 @@ public class App
 
             JSONObject UuidMapping = (JSONObject) UuidMapFile;
 
+            JSONObject answerReply = (JSONObject) UuidMapping.get("answerReply");
+
             Object propertiesValuesFile = jsonParser.parse(readerDataPropValues);
 
             dataPropertyTypeValues = (JSONObject) propertiesValuesFile;
@@ -90,18 +93,12 @@ public class App
             gatherDataDSW.initializePathsReplies(UuidMapping, pathsReplies);
 
             Map<String, Map<String, List<JSONObject>>> replies = new HashMap<>();
-            replies.put("DMP", gatherDataDSW.getRepliesFormCategory("DMP", pathsReplies, DSWReplies, requiredLevels));
-            replies.put("Contact", gatherDataDSW.getRepliesFormCategory("Contact", pathsReplies, DSWReplies, requiredLevels));
-            replies.put("Contributor", gatherDataDSW.getRepliesFormCategory("Contributor", pathsReplies, DSWReplies, requiredLevels));
-            replies.put("Project", gatherDataDSW.getRepliesFormCategory("Project", pathsReplies, DSWReplies, requiredLevels));
-            replies.put("Cost", gatherDataDSW.getRepliesFormCategory("Cost", pathsReplies, DSWReplies, requiredLevels));
-            replies.put("Dataset", gatherDataDSW.getRepliesFormCategory("Dataset", pathsReplies, DSWReplies, requiredLevels));
-
-            // for(String cat : replies.keySet()) {
-            //     System.out.println(replies.get(cat));
-            //     System.out.println("");
-            // }
-            
+            replies.put("DMP", gatherDataDSW.getRepliesFormCategory("DMP", pathsReplies, DSWReplies, requiredLevels, answerReply));
+            replies.put("Contact", gatherDataDSW.getRepliesFormCategory("Contact", pathsReplies, DSWReplies, requiredLevels, answerReply));
+            replies.put("Contributor", gatherDataDSW.getRepliesFormCategory("Contributor", pathsReplies, DSWReplies, requiredLevels, answerReply));
+            replies.put("Project", gatherDataDSW.getRepliesFormCategory("Project", pathsReplies, DSWReplies, requiredLevels, answerReply));
+            replies.put("Cost", gatherDataDSW.getRepliesFormCategory("Cost", pathsReplies, DSWReplies, requiredLevels, answerReply));
+            replies.put("Dataset", gatherDataDSW.getRepliesFormCategory("Dataset", pathsReplies, DSWReplies, requiredLevels, answerReply));
             
 
             File ontologyFile = new File("C:/Users/antot/DSWtoDCSO/dswtodcso/resources/rda-common-dmp.2.0.0.owl");
@@ -109,10 +106,7 @@ public class App
             OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
             OWLOntology ontology = Ontology.importOntology(ontologyFile, manager);
             OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
-
-            IRI ontologyIRI = ontology.getOntologyID().getOntologyIRI().get();
             
-            //System.out.println(ontology);
             
             Map<String, OWLClass> classesMap = new HashMap<>(); 
             
@@ -121,14 +115,6 @@ public class App
             for (OWLClass owlClass : classes) {   
                 classesMap.put(owlClass.getIRI().getShortForm(), owlClass);
             }
-
-            
-            
-            //HashMap<IRI, OWLLiteral> propertyValues = new HashMap<>();
-            //propertyValues = getPropertyValues(dataFactory, ontologyIRI, cost);
-
-            //Ontology.createIndividual(ontology, manager, IRI.create(ontologyIRI.toString() + "#costTest"), classesMap.get("Cost"));
-
 
 
             // Set<OWLAxiom> axi = ontology.getAxioms();
@@ -229,12 +215,12 @@ public class App
     }
 
     /**
-     * 
-     * @param ontology
-     * @param manager
-     * @param propertyClass
-     * @param elem
-     * @param ind
+     * Creates the DataProperty for a given individual
+     * @param ontology OWLOntology
+     * @param manager OWLOntologyManager
+     * @param propertyClass Name of the class of the individual
+     * @param elem JSONObject with the individual data
+     * @param ind OWLIndividual 
      */
     public static void createDatapropertiesForInd(OWLOntology ontology, OWLOntologyManager manager, String propertyClass, 
     JSONObject elem, OWLIndividual ind) {
@@ -248,7 +234,7 @@ public class App
             if (!(elem.get(attribute) instanceof List)) {
                 if (dataPropertiesType.get(propertyClass) != null) {
                     if (dataPropertiesType.get(propertyClass).get(attribute) != null) {
-                        OWLLiteral value = getDataPropertyValue(ontology, dataPropertiesType.get(propertyClass).get(attribute), elem.get(attribute).toString());
+                        OWLLiteral value = Utils.getDataPropertyValue(ontology, dataPropertiesType.get(propertyClass).get(attribute), elem.get(attribute).toString(), dataPropertyTypeValues);
                         propertyValues.put(IRI.create(ontologyIRI.toString() + "#" + attribute), value);
                     }
                 } 
@@ -258,187 +244,10 @@ public class App
         Ontology.addDataPropertyToIndividual(ontology, manager, ind, propertyValues);
     }
 
-    /**
-     * 
-     * @param ontology
-     * @param propertyType
-     * @param value
-     * @return
-     */
-    public static OWLLiteral getDataPropertyValue(OWLOntology ontology, String propertyType, String value) {
-        OWLLiteral dataPropertyValue = null;
-        OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
-
-        switch (propertyType) {
-            case "xsd:boolean":
-                Boolean booleanValue = Boolean.parseBoolean(value);
-                dataPropertyValue = dataFactory.getOWLLiteral(booleanValue);
-                break;
-
-            case "xsd:double":
-                try {
-                    double doubleValue = Double.parseDouble(value);
-                    dataPropertyValue = dataFactory.getOWLLiteral(doubleValue);
-                } catch (NumberFormatException e) {
-                    System.out.println("Value " + value + " is not in tha correct format for an Double");
-                }
-                
-                break;
-                
-            case "xsd:float":
-                try {
-                    float floatValue = Float.parseFloat(value);
-                    dataPropertyValue = dataFactory.getOWLLiteral(floatValue);
-                } catch (NumberFormatException e) {
-                    System.out.println("Value " + value + " is not in tha correct format for an Float");
-                }
-
-                break;
-
-            case "xsd:integer":
-                try {
-                    int intValue = Integer.parseInt(value);
-                    dataPropertyValue = dataFactory.getOWLLiteral(intValue);
-                } catch (NumberFormatException e) {
-                    System.out.println("Value " + value + " is not in tha correct format for an Integer");
-                }
-                
-                break;
-
-            case "xsd:string":
-                dataPropertyValue = dataFactory.getOWLLiteral(value);
-                break;
-
-            case "xsd:dateTime":
-                OWLDatatype dateType = new OWL2DatatypeImpl(OWL2Datatype.XSD_DATE_TIME);
-                dataPropertyValue = dataFactory.getOWLLiteral(value, dateType);
-                break;
-
-            case "xsd:anyURI":
-                OWLDatatype uriType = new OWL2DatatypeImpl(OWL2Datatype.XSD_ANY_URI);
-                dataPropertyValue = dataFactory.getOWLLiteral(value, uriType);
-                break;
-
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#yesNoUnknownVocabulary>":
-                JSONArray typesYesNoUnk = (JSONArray) dataPropertyTypeValues.get("yesNoUnknownVocabulary");
-
-                if (!containsCaseInsensitive(typesYesNoUnk, value)) {
-                    System.out.println(value + " Should Be Yes/No/Unknown");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-                
-                
-                break;
-            
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso639-3_values>":                        
-                JSONArray typesISO639 = (JSONArray) dataPropertyTypeValues.get("iso639-3_values");
-
-                if (!containsCaseInsensitive(typesISO639, value)) {
-                    System.out.println(value + " Should Be Complient with ISO639-3");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-                
-                break;
-
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#role_values>":
-                JSONArray typesRole = (JSONArray) dataPropertyTypeValues.get("role_values");
-
-                if (!containsCaseInsensitive(typesRole, value)) {
-                    System.out.println(value + " Should Be Complient with role Values");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-
-                break;
-
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-4217-code>":
-                JSONArray typesISO4217 = (JSONArray) dataPropertyTypeValues.get("iso-4217-code");
-
-                if (!containsCaseInsensitive(typesISO4217, value)) {
-                    System.out.println(value + " Should Be Complient with ISO4217");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-                break;
-
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#fundingStatusVocabulary>":
-                JSONArray typesFundingSt = (JSONArray) dataPropertyTypeValues.get("fundingStatusVocabulary");
-
-                if (!containsCaseInsensitive(typesFundingSt, value)) {
-                    System.out.println(value + " Should Be Complient with fundingStatusVocabulary");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-                break;
-
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataAccessVocabulary>":
-                JSONArray typesDataAccess = (JSONArray) dataPropertyTypeValues.get("dataAccessVocabulary");
-
-                if (!containsCaseInsensitive(typesDataAccess, value)) {
-                    System.out.println(value + " Should Be Complient with dataAccessVocabulary");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-                break;
-                
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#certified_with_values>":
-                JSONArray typesCertified = (JSONArray) dataPropertyTypeValues.get("certified_with_values");
-
-                if (!containsCaseInsensitive(typesCertified, value)) {
-                    System.out.println(value + " Should Be Complient with certifiedWith_values");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-                break;
-
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-3166-1-alpha2>":
-                JSONArray typesISO3166 = (JSONArray) dataPropertyTypeValues.get("iso-3166-1-alpha2");
-
-                if (!containsCaseInsensitive(typesISO3166, value)) {
-                    System.out.println(value + " Should Be Complient with iso-3166-1-alpha2");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-                break;
-
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#pid_system_values>":
-                JSONArray typesPid = (JSONArray) dataPropertyTypeValues.get("pid_system_values");
-
-                if (!containsCaseInsensitive(typesPid, value)) {
-                    System.out.println(value + " Should Be Complient with PID System values");
-                } else {
-                    dataPropertyValue = dataFactory.getOWLLiteral(value);
-                }
-                break;
+    
 
 
-            default:
-                System.out.println(propertyType);
-                break;
-            }
-
-        return dataPropertyValue;
-    }
-
-
-    /**
-     * 
-     * @param obj
-     * @param value
-     * @return
-     */
-    public static Boolean containsCaseInsensitive(JSONArray obj, String value) {
-        for (int i = 0; i < obj.size(); i++) {    
-            String temp = (String) obj.get(i);
-            temp = temp.trim().replaceAll("\\s+", "");
-            if (temp.equalsIgnoreCase(value.trim().replaceAll("\\s+", ""))) {
-                return true;
-            }
-        }
-        return false;
-    }
+    
 
     /**
      * Creates the individuals recursively
@@ -480,34 +289,4 @@ public class App
             }
         }
     }
-
-
-
-    /**
-     * 
-     * @param dataFactory
-     * @param ontologyIRI
-     * @param values
-     * @return
-     */
-    public static HashMap<IRI, OWLLiteral> getPropertyValues(OWLDataFactory dataFactory, IRI ontologyIRI, 
-    Map<String, List<JSONObject>> values) {
-        
-        HashMap<IRI, OWLLiteral> propertyValues = new HashMap<>();
-        JSONObject propValue;
-
-        for (String prop : values.keySet()) {
-            
-            IRI valueIRI = IRI.create(ontologyIRI.toString() + "#" + prop);
-            propValue = values.get(prop).get(0);
-            if (propValue.size() == 1) {
-                OWLLiteral literal = dataFactory.getOWLLiteral(propValue.get(prop).toString());
-                propertyValues.put(valueIRI, literal);
-            }
-            
-        }
-        
-        return propertyValues;
-    }
-
 }
