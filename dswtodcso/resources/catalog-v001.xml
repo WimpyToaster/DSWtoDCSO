@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1587834421615" name="http://www.sysresearch.org/rda-common-dmp" uri="rda-common-dmp.1.1.2.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587834421615" name="duplicate:https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl" uri="newOntology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1587834421615" name="duplicate:https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl" uri="rda-common-dmp.2.0.0.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1588214313625" name="http://www.sysresearch.org/rda-common-dmp" uri="rda-common-dmp.1.1.2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1588214313625" name="duplicate:https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl" uri="newOntology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1588214313625" name="duplicate:https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl" uri="rda-common-dmp.2.0.0.owl"/>
     </group>
 </catalog>

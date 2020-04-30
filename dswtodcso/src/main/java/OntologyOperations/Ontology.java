@@ -45,7 +45,7 @@ public class Ontology {
         }
     }
 
-    public static void createIndividual(OWLOntology ontology, OWLOntologyManager manager, IRI indIRI, OWLClass classInd) {
+    public static OWLIndividual createIndividual(OWLOntology ontology, OWLOntologyManager manager, IRI indIRI, OWLClass classInd) {
         OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
         
         OWLIndividual ind = dataFactory.getOWLNamedIndividual(indIRI);
@@ -53,6 +53,8 @@ public class Ontology {
         OWLAxiom axiom = dataFactory.getOWLClassAssertionAxiom(classInd, ind);
         AddAxiom addAxion = new AddAxiom(ontology, axiom);
         manager.applyChange(addAxion);
+        
+        return ind;
     }
 
     public static void addDataPropertyToIndividual(OWLOntology ontology, OWLOntologyManager manager, OWLIndividual ind, 
@@ -65,13 +67,14 @@ public class Ontology {
         AddAxiom addAxiomChange;
         
         for (IRI iri : propertyValues.keySet()) {
-            property = dataFactory.getOWLDataProperty(iri);
-            dataPropertyValue = propertyValues.get(iri);
-            assertion = dataFactory.getOWLDataPropertyAssertionAxiom(property, ind, dataPropertyValue);
-            addAxiomChange = new AddAxiom(ontology, assertion);
-            manager.applyChange(addAxiomChange);
+            if (propertyValues.get(iri) != null) {
+                property = dataFactory.getOWLDataProperty(iri);
+                dataPropertyValue = propertyValues.get(iri);
+                assertion = dataFactory.getOWLDataPropertyAssertionAxiom(property, ind, dataPropertyValue);
+                addAxiomChange = new AddAxiom(ontology, assertion);
+                manager.applyChange(addAxiomChange);
+            }
         }
-
     }
 
 }

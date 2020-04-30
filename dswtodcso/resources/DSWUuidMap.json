@@ -10,11 +10,11 @@
                             "language": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.53d65bf8-8aad-4de7-b698-38fe641791e6",
                             "created": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.f04b91f8-b423-4302-bc7c-6db9060d013b",
                             "modified": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.ba1a7eb0-b390-4818-9da0-bfb1a9383547",
-                            "ethicalAnswer": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.b1ed0af2-bad2-41d3-b699-02246349bec1",
+                            "ethical_issues_exist": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.b1ed0af2-bad2-41d3-b699-02246349bec1",
                             "dmp_id": {
                                 "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.92428580-748f-4c51-8ea3-c05b605d249e",
                                 "identifier": "e7ecc501-b029-4f4b-b4ae-b3473c75d637",
-                                "identifierType": "48a96932-cca6-4a42-9d1f-28b3d707e8bc"
+                                "identifier_type": "48a96932-cca6-4a42-9d1f-28b3d707e8bc"
                             }
                         }
                     }
@@ -36,12 +36,12 @@
                     }
         },
         {
-            "question": "DMStaff",
+            "question": "Contributor",
             "uuid": {
                         "contributor": {
                             "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.f8681d8e-b911-4837-9f8e-c05c298d19c2",
                             "name": "0cad6866-1037-47a8-8fa6-7b31feecabbe",
-                            "email": "e41a0551-3f7b-43e6-be49-f69634473cb5",
+                            "mbox": "e41a0551-3f7b-43e6-be49-f69634473cb5",
                             "role": "4904b69a-0988-4559-b398-d0f4a6be2778",
 
                             "contributor_id": {
@@ -61,8 +61,8 @@
                             "quantity": "05d97e27-7391-4e9c-a357-e7d2e3afb102.12dc1e7f-93c4-4e51-84e2-65ca5374e167",
                             "title": "555dad0b-438a-4cad-8b5d-746f4f7f7f7b",
                             "description": "3f574aaa-a7cf-442f-bf6c-21fa9ba1b46d",
-                            "startDate": "35d01171-b5b0-48a4-9e8c-c21524a27ebe",
-                            "endDate": "3fc4db50-20b6-4814-990e-3bdadb43efa3",
+                            "start": "35d01171-b5b0-48a4-9e8c-c21524a27ebe",
+                            "end": "3fc4db50-20b6-4814-990e-3bdadb43efa3",
                             "funding": {
                                             "quantity": "0968dd1d-c3b3-471f-9c0d-da7baa818583",
                                             "funder_id": {
@@ -90,8 +90,8 @@
                             "quantity": "05d97e27-7391-4e9c-a357-e7d2e3afb102.92c53099-9872-4890-909c-6aa5c89c6f84",
                             "title": "7c1ec1f7-f18d-41ae-b8e5-d90363f34255",
                             "description": "2df5d06e-abc6-4636-98f4-a433d8476346",
-                            "costValue": "c4dbc52a-76c4-41f7-90d3-d8785828eb67",
-                            "costUnit": "c64af56b-73c5-445c-8ced-5bab570ce7dd"
+                            "value": "c4dbc52a-76c4-41f7-90d3-d8785828eb67",
+                            "currency_code": "c64af56b-73c5-445c-8ced-5bab570ce7dd"
                         }
                     }
         },
@@ -109,7 +109,7 @@
                                 "keyword": "de68c487-8ae4-4b88-b511-53d8db740c06"
                             },
                             
-                            "datasetType": "f869a7b6-1cf5-4418-bd5d-3b04d8680c16",
+                            "type": "f869a7b6-1cf5-4418-bd5d-3b04d8680c16",
                             "issued": "a0ac1dbd-6050-4c92-bd2a-bec7c99b458f",
 
                             "dataset_id": {
@@ -118,10 +118,10 @@
                                 "identifierType": "5e5a581e-3cf3-413f-a96f-085175e0c0fa"
                             },
                             
-                            "preservationStatement": "11b1ecaf-58de-40fd-9f04-0ec1924099a6",
-                            "dataQualityAssurance": "1930ebb3-81ee-4e39-840f-7c49b69bdcaf",
-                            "personalData": "35c30d44-f741-4bea-9f1d-302d46af77a7",
-                            "sensitiveData": "bf632ebb-80c8-4303-a044-8a2fd08c9e81",
+                            "preservation_statement": "11b1ecaf-58de-40fd-9f04-0ec1924099a6",
+                            "data_quality_assurance": "1930ebb3-81ee-4e39-840f-7c49b69bdcaf",
+                            "personal_data": "35c30d44-f741-4bea-9f1d-302d46af77a7",
+                            "sensitive_data": "bf632ebb-80c8-4303-a044-8a2fd08c9e81",
 
                             "metadata_standard": {
                                 "quantity": "8c8c80cb-6266-484b-b831-9ddec20ced07",
@@ -156,11 +156,11 @@
                                 "title": "1fbd8ee7-b4c9-4411-869b-2cdb5de7a9c6",
                                 "description": "4a7d37c6-119f-4162-be46-9109f0525f17",
                                 "format": "b1899ae0-0b4a-4a06-9551-db655ecfe330",
-                                "byteSize": "ac58becc-b439-413d-bc01-d038f5f5dc8c",
-                                "accessURL": "8495da71-f0d6-440a-8fd3-50ca960abfec",
-                                "downloadURL": "06de417c-152c-4a70-a3f7-a779535ec00e",
+                                "byte_size": "ac58becc-b439-413d-bc01-d038f5f5dc8c",
+                                "access_url": "8495da71-f0d6-440a-8fd3-50ca960abfec",
+                                "download_url": "06de417c-152c-4a70-a3f7-a779535ec00e",
                                 "dataAccess": "52977277-0b3b-4c46-a89c-df286c18e745",
-                                "availableTill": "a5d8efda-0d6d-4fb3-9c1e-51d2b1b83c1f",
+                                "available_until": "a5d8efda-0d6d-4fb3-9c1e-51d2b1b83c1f",
                                 "host": {
                                     "quantity": "db488a86-9116-460e-8492-a99b07486079",
                                     "title": "633ad583-53d4-4d5d-b692-527d1033ce62",
@@ -170,17 +170,17 @@
                                         "identifier": "b5ba1713-15b8-4e7c-b3df-ab1a57e86f13",
                                         "identifier_type": "8569eaae-1ca8-4efb-babc-a17ac925b3b4"
                                     },
-                                    "supportsVersioning": "f74d9335-add3-4f95-8d9b-ba0076df2c7e",
-                                    "backupType": "46634535-fa23-40bb-9126-71d046c13fd9",
-                                    "backupFrequency": "2242fa18-9723-4a98-8221-640b37ae3549",
-                                    "certifiedWith": "c7c7b9c2-fa42-4218-b520-e90d83f1868e",
-                                    "geoLocation": "ab80c2fa-464e-45d6-8a64-b42f8cf91ba2",
-                                    "PIDSystem": "6a0933ba-6315-4336-80bd-835d52afe13d"
+                                    "support_versioning": "f74d9335-add3-4f95-8d9b-ba0076df2c7e",
+                                    "backup_type": "46634535-fa23-40bb-9126-71d046c13fd9",
+                                    "backup_frequency": "2242fa18-9723-4a98-8221-640b37ae3549",
+                                    "certified_with": "c7c7b9c2-fa42-4218-b520-e90d83f1868e",
+                                    "geo_location": "ab80c2fa-464e-45d6-8a64-b42f8cf91ba2",
+                                    "pid_system": "6a0933ba-6315-4336-80bd-835d52afe13d"
                                 },
                                 "license": {
                                     "quantity": "66364cf7-3d5d-4c7c-841b-f275aae693e7",
-                                    "reference": "a9a87104-46eb-4262-830e-19c56077f4cb",
-                                    "startDate": "29efd318-231f-4204-aba8-5c2569866e50"
+                                    "license_ref": "a9a87104-46eb-4262-830e-19c56077f4cb",
+                                    "start_date": "29efd318-231f-4204-aba8-5c2569866e50"
                                 }
                             }
                         }
