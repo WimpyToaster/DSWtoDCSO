@@ -2,6 +2,7 @@ package Utils;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
+import org.semanticweb.owlapi.model.IRI;
 import org.semanticweb.owlapi.model.OWLDataFactory;
 import org.semanticweb.owlapi.model.OWLDatatype;
 import org.semanticweb.owlapi.model.OWLLiteral;
@@ -41,6 +42,7 @@ public class Utils {
     public static OWLLiteral getDataPropertyValue(OWLOntology ontology, String propertyType, String value, JSONObject dataPropertyTypeValues) {
         OWLLiteral dataPropertyValue = null;
         OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
+        IRI ontologyIRI = ontology.getOntologyID().getOntologyIRI().get();
 
         switch (propertyType) {
             case "xsd:boolean":
@@ -92,7 +94,7 @@ public class Utils {
                 dataPropertyValue = dataFactory.getOWLLiteral(value, uriType);
                 break;
 
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#yesNoUnknownVocabulary>":
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#yesNoUnknownVocabulary>":
                 JSONArray typesYesNoUnk = (JSONArray) dataPropertyTypeValues.get("yesNoUnknownVocabulary");
 
                 if (!containsCaseInsensitive(typesYesNoUnk, value)) {
@@ -104,7 +106,7 @@ public class Utils {
                 
                 break;
             
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso639-3_values>":                        
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#iso639-3_values>":                        
                 JSONArray typesISO639 = (JSONArray) dataPropertyTypeValues.get("iso639-3_values");
 
                 if (!containsCaseInsensitive(typesISO639, value)) {
@@ -115,7 +117,7 @@ public class Utils {
                 
                 break;
 
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#role_values>":
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#role_values>":
                 JSONArray typesRole = (JSONArray) dataPropertyTypeValues.get("role_values");
 
                 if (!containsCaseInsensitive(typesRole, value)) {
@@ -126,7 +128,7 @@ public class Utils {
 
                 break;
 
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-4217-code>":
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#iso-4217-code>":
                 JSONArray typesISO4217 = (JSONArray) dataPropertyTypeValues.get("iso-4217-code");
 
                 if (!containsCaseInsensitive(typesISO4217, value)) {
@@ -136,7 +138,7 @@ public class Utils {
                 }
                 break;
 
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#fundingStatusVocabulary>":
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#fundingStatusVocabulary>":
                 JSONArray typesFundingSt = (JSONArray) dataPropertyTypeValues.get("fundingStatusVocabulary");
 
                 if (!containsCaseInsensitive(typesFundingSt, value)) {
@@ -146,7 +148,7 @@ public class Utils {
                 }
                 break;
 
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#dataAccessVocabulary>":
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#dataAccessVocabulary>":
                 JSONArray typesDataAccess = (JSONArray) dataPropertyTypeValues.get("dataAccessVocabulary");
 
                 if (!containsCaseInsensitive(typesDataAccess, value)) {
@@ -156,7 +158,7 @@ public class Utils {
                 }
                 break;
                 
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#certified_with_values>":
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#certified_with_values>":
                 JSONArray typesCertified = (JSONArray) dataPropertyTypeValues.get("certified_with_values");
 
                 if (!containsCaseInsensitive(typesCertified, value)) {
@@ -166,7 +168,7 @@ public class Utils {
                 }
                 break;
 
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#iso-3166-1-alpha2>":
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#iso-3166-1-alpha2>":
                 JSONArray typesISO3166 = (JSONArray) dataPropertyTypeValues.get("iso-3166-1-alpha2");
 
                 if (!containsCaseInsensitive(typesISO3166, value)) {
@@ -176,7 +178,7 @@ public class Utils {
                 }
                 break;
 
-            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.0.owl#pid_system_values>":
+            case "<https://raw.githubusercontent.com/RDA-DMP-Common/RDA-DMP-Common-Standard/master/ontologies/dcso/rda-common-dmp.2.0.1.owl#pid_system_values>":
                 JSONArray typesPid = (JSONArray) dataPropertyTypeValues.get("pid_system_values");
 
                 if (!containsCaseInsensitive(typesPid, value)) {

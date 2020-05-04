@@ -69,7 +69,7 @@
                             "contact_id": {
                                 "quantity": "b6256b0a-0bf9-4cf3-8b5a-507fdf819d6a.8c49466c-0191-4a34-8bc7-f6b6804a0fd1.0.fad9e449-1d11-437a-8a75-827a0570bd25",
                                 "identifier": "702f800f-c80f-470c-9336-b905e77d1749",
-                                "identifierType": "518868a5-ccad-49d2-b9cf-78cd81ad6dc9"
+                                "identifier_type": "518868a5-ccad-49d2-b9cf-78cd81ad6dc9"
                             }
                         }
                     }
@@ -154,7 +154,7 @@
                             "dataset_id": {
                                 "quantity": "82122c96-7121-44cd-8240-2b3c4ea01bb3",
                                 "identifier": "e84e0707-3be0-4928-a7b6-964aa18497ba",
-                                "identifierType": "5e5a581e-3cf3-413f-a96f-085175e0c0fa"
+                                "identifier_type": "5e5a581e-3cf3-413f-a96f-085175e0c0fa"
                             },
                             
                             "preservation_statement": "11b1ecaf-58de-40fd-9f04-0ec1924099a6",
@@ -166,8 +166,8 @@
                                 "quantity": "8c8c80cb-6266-484b-b831-9ddec20ced07",
                                 "metadata_standard_id": {
                                     "quantity": "95846d36-85b4-491c-b9b5-296a05359e60",
-                                    "identidier": "73a34d1f-3874-47cc-897f-88bedc91d5bf",
-                                    "identidier_type": "ab422ac7-e437-4658-aff5-783edf9cbd71"
+                                    "identifier": "73a34d1f-3874-47cc-897f-88bedc91d5bf",
+                                    "identifier_type": "ab422ac7-e437-4658-aff5-783edf9cbd71"
                                 },
                                 "language": "d04b9774-0d62-4a54-a1ab-e2fd22ef1c38",
                                 "description": "aed6a215-8fb0-4cf5-b77c-1ebeeecaa420"

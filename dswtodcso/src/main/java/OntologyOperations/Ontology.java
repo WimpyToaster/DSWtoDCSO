@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.util.HashMap;
+import java.util.Set;
 
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.formats.FunctionalSyntaxDocumentFormat;
@@ -16,10 +17,17 @@ import org.semanticweb.owlapi.model.OWLDataProperty;
 import org.semanticweb.owlapi.model.OWLDataPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLIndividual;
 import org.semanticweb.owlapi.model.OWLLiteral;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
+import org.semanticweb.owlapi.model.OWLObjectProperty;
+import org.semanticweb.owlapi.model.OWLObjectPropertyAssertionAxiom;
 import org.semanticweb.owlapi.model.OWLOntology;
 import org.semanticweb.owlapi.model.OWLOntologyCreationException;
 import org.semanticweb.owlapi.model.OWLOntologyManager;
 import org.semanticweb.owlapi.model.OWLOntologyStorageException;
+import org.semanticweb.owlapi.reasoner.NodeSet;
+import org.semanticweb.owlapi.reasoner.OWLReasoner;
+import org.semanticweb.owlapi.reasoner.OWLReasonerFactory;
+import org.semanticweb.owlapi.reasoner.structural.StructuralReasonerFactory;
 
 public class Ontology {
 
@@ -47,14 +55,18 @@ public class Ontology {
 
     public static OWLIndividual createIndividual(OWLOntology ontology, OWLOntologyManager manager, IRI indIRI, OWLClass classInd) {
         OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
-        
-        OWLIndividual ind = dataFactory.getOWLNamedIndividual(indIRI);
+        OWLIndividual ind = getIndividual(ontology, indIRI);
 
         OWLAxiom axiom = dataFactory.getOWLClassAssertionAxiom(classInd, ind);
         AddAxiom addAxion = new AddAxiom(ontology, axiom);
         manager.applyChange(addAxion);
         
         return ind;
+    }
+
+    public static OWLIndividual getIndividual(OWLOntology ontology, IRI indIRI) {
+        OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
+        return dataFactory.getOWLNamedIndividual(indIRI);
     }
 
     public static void addDataPropertyToIndividual(OWLOntology ontology, OWLOntologyManager manager, OWLIndividual ind, 
@@ -77,4 +89,25 @@ public class Ontology {
         }
     }
 
+    public static void addObjectPropertyToIndividual(OWLOntology ontology, OWLOntologyManager manager, OWLIndividual firstInd, 
+    OWLIndividual secondInd, IRI propertyIRI) {
+
+        OWLDataFactory dataFactory = ontology.getOWLOntologyManager().getOWLDataFactory();
+        OWLObjectProperty property;
+        OWLObjectPropertyAssertionAxiom assertion;
+        AddAxiom addAxiomChange;
+        
+        property = dataFactory.getOWLObjectProperty(propertyIRI);
+        assertion = dataFactory.getOWLObjectPropertyAssertionAxiom(property, firstInd, secondInd);
+        addAxiomChange = new AddAxiom(ontology, assertion);
+        manager.applyChange(addAxiomChange);
+    }
+
+    public static Set<OWLNamedIndividual> getIndividualsOfClass(OWLOntology ontology, OWLClass indClass) {
+        OWLReasonerFactory reasonerFactory = new StructuralReasonerFactory();
+        OWLReasoner reasoner = reasonerFactory.createReasoner(ontology);
+        NodeSet<OWLNamedIndividual> individuals = reasoner.getInstances(indClass, true);
+
+        return individuals.getFlattened();
+    }
 }
