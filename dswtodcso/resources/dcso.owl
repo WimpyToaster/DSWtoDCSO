@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="https://w3id.org/dcso#"
      xml:base="https://w3id.org/dcso"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rda-common-dmp1="https://w3id.org/dcso#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:rda-common-dmp="https:/#"
-     xmlns:rda-common-dmp1="https://w3id.org/dcso#">
+     xmlns:rda-common-dmp="https:/#">
     <owl:Ontology rdf:about="https://w3id.org/dcso">
-        <owl:versionInfo>2.0.2</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2.0.2</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -22,12 +22,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://w3id.org/dcso#hasCrossReference -->
-
 
     <owl:AnnotationProperty rdf:about="https://w3id.org/dcso#hasCrossReference"/>
     
@@ -41,12 +39,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://w3id.org/dcso#certified_with_values -->
-
 
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#certified_with_values">
         <owl:equivalentClass>
@@ -108,7 +104,6 @@
 
     <!-- https://w3id.org/dcso#contributor_id_type_values -->
 
-
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#contributor_id_type_values">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -145,7 +140,6 @@
 
     <!-- https://w3id.org/dcso#dataAccessVocabulary -->
 
-
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#dataAccessVocabulary">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -176,7 +170,6 @@
 
     <!-- https://w3id.org/dcso#funder_id_type_values -->
 
-
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#funder_id_type_values">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -206,7 +199,6 @@
 
 
     <!-- https://w3id.org/dcso#fundingStatusVocabulary -->
-
 
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#fundingStatusVocabulary">
         <owl:equivalentClass>
@@ -243,7 +235,6 @@
 
 
     <!-- https://w3id.org/dcso#iso-3166-1-alpha2 -->
-
 
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#iso-3166-1-alpha2">
         <owl:equivalentClass>
@@ -1751,7 +1742,6 @@
 
     <!-- https://w3id.org/dcso#iso-4217-code -->
 
-
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#iso-4217-code">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -2837,7 +2827,6 @@
 
 
     <!-- https://w3id.org/dcso#iso639-3_values -->
-
 
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#iso639-3_values">
         <owl:equivalentClass>
@@ -3955,7 +3944,6 @@
 
     <!-- https://w3id.org/dcso#pid_system_values -->
 
-
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#pid_system_values">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -4081,7 +4069,6 @@
 
 
     <!-- https://w3id.org/dcso#role_values -->
-
 
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#role_values">
         <owl:equivalentClass>
@@ -4221,7 +4208,6 @@
 
     <!-- https://w3id.org/dcso#simple_type_values -->
 
-
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#simple_type_values">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -4245,7 +4231,6 @@
 
 
     <!-- https://w3id.org/dcso#type_values -->
-
 
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#type_values">
         <owl:equivalentClass>
@@ -4289,7 +4274,6 @@
 
     <!-- https://w3id.org/dcso#yesNoUnknownVocabulary -->
 
-
     <rdfs:Datatype rdf:about="https://w3id.org/dcso#yesNoUnknownVocabulary">
         <owl:equivalentClass>
             <rdfs:Datatype>
@@ -4326,12 +4310,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://w3id.org/dcso#hasContact -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasContact">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
@@ -4343,7 +4325,6 @@
 
     <!-- https://w3id.org/dcso#hasContact_id -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasContact_id">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contact_id"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#contact"/>
@@ -4352,7 +4333,6 @@
 
 
     <!-- https://w3id.org/dcso#hasContributor -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasContributor">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
@@ -4363,7 +4343,6 @@
 
     <!-- https://w3id.org/dcso#hasContributor_id -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasContributor_id">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contributor_id"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#contributor"/>
@@ -4372,7 +4351,6 @@
 
 
     <!-- https://w3id.org/dcso#hasCost -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasCost">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
@@ -4383,7 +4361,6 @@
 
     <!-- https://w3id.org/dcso#hasDataset -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasDataset">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#dataset"/>
@@ -4392,7 +4369,6 @@
 
 
     <!-- https://w3id.org/dcso#hasDataset_id -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasDataset_id">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset_id"/>
@@ -4403,7 +4379,6 @@
 
     <!-- https://w3id.org/dcso#hasDistribution -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasDistribution">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#distribution"/>
@@ -4413,17 +4388,15 @@
 
     <!-- https://w3id.org/dcso#hasDmp_id -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasDmp_id">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp_id"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#dmp"/>
-        <rdfs:comment>Provides a TypeIdentifier for a DMP</rdfs:comment>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provides a TypeIdentifier for a DMP</rdfs:comment>
     </owl:ObjectProperty>
     
 
 
     <!-- https://w3id.org/dcso#hasFunder_id -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasFunder_id">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#funder_id"/>
@@ -4434,7 +4407,6 @@
 
     <!-- https://w3id.org/dcso#hasFunding -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasFunding">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#project"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#funding"/>
@@ -4443,7 +4415,6 @@
 
 
     <!-- https://w3id.org/dcso#hasGrant_id -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasGrant_id">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#grant_id"/>
@@ -4454,7 +4425,6 @@
 
     <!-- https://w3id.org/dcso#hasHost -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasHost">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#distribution"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#host"/>
@@ -4463,7 +4433,6 @@
 
 
     <!-- https://w3id.org/dcso#hasLicence -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasLicence">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#distribution"/>
@@ -4474,7 +4443,6 @@
 
     <!-- https://w3id.org/dcso#hasMetadata_standard -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasMetadata_standard">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#metadata_standard"/>
@@ -4483,7 +4451,6 @@
 
 
     <!-- https://w3id.org/dcso#hasMetadata_standard_id -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasMetadata_standard_id">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#metadata_standard_id"/>
@@ -4494,7 +4461,6 @@
 
     <!-- https://w3id.org/dcso#hasProject -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasProject">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#project"/>
@@ -4504,7 +4470,6 @@
 
     <!-- https://w3id.org/dcso#hasSecurity_and_privacy -->
 
-
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasSecurity_and_privacy">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#security_and_privacy"/>
@@ -4513,7 +4478,6 @@
 
 
     <!-- https://w3id.org/dcso#hasTechnical_resource -->
-
 
     <owl:ObjectProperty rdf:about="https://w3id.org/dcso#hasTechnical_resource">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
@@ -4530,23 +4494,20 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://w3id.org/dcso#access_url -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#access_url">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#distribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.w3.org/ns/dcat#accessURL</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.w3.org/ns/dcat#accessURL</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#availability -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#availability">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
@@ -4557,7 +4518,6 @@
 
     <!-- https://w3id.org/dcso#available_until -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#available_until">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#distribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -4566,7 +4526,6 @@
 
 
     <!-- https://w3id.org/dcso#backup_frequency -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#backup_frequency">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
@@ -4577,7 +4536,6 @@
 
     <!-- https://w3id.org/dcso#backup_type -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#backup_type">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4587,17 +4545,15 @@
 
     <!-- https://w3id.org/dcso#byte_size -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#byte_size">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#distribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/dcat#byteSize</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/dcat#byteSize</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#certified_with -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#certified_with">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
@@ -4608,17 +4564,15 @@
 
     <!-- https://w3id.org/dcso#created -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#created">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/created</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/created</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#currency_code -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#currency_code">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#cost"/>
@@ -4629,7 +4583,6 @@
 
     <!-- https://w3id.org/dcso#dataAccess -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#dataAccess">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#distribution"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#dataAccessVocabulary"/>
@@ -4639,7 +4592,6 @@
 
     <!-- https://w3id.org/dcso#data_quality_assurance -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#data_quality_assurance">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4648,7 +4600,6 @@
 
 
     <!-- https://w3id.org/dcso#description -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#description">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#cost"/>
@@ -4661,24 +4612,22 @@
         <rdfs:domain rdf:resource="https://w3id.org/dcso#security_and_privacy"/>
         <rdfs:domain rdf:resource="https://w3id.org/dcso#technical_resource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/description</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/description</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#download_url -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#download_url">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#distribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/dcat#downloadURL</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/dcat#downloadURL</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#end -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#end">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#project"/>
@@ -4689,7 +4638,6 @@
 
     <!-- https://w3id.org/dcso#ethical_issues_description -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#ethical_issues_description">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
@@ -4698,7 +4646,6 @@
 
 
     <!-- https://w3id.org/dcso#ethical_issues_exist -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#ethical_issues_exist">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
@@ -4709,7 +4656,6 @@
 
     <!-- https://w3id.org/dcso#ethical_issues_report -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#ethical_issues_report">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -4719,17 +4665,15 @@
 
     <!-- https://w3id.org/dcso#format -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#format">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#distribution"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/format</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/format</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#funding_status -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#funding_status">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#funding"/>
@@ -4740,7 +4684,6 @@
 
     <!-- https://w3id.org/dcso#geo_location -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#geo_location">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#iso-3166-1-alpha2"/>
@@ -4749,7 +4692,6 @@
 
 
     <!-- https://w3id.org/dcso#identifier -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#identifier">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contact_id"/>
@@ -4760,13 +4702,12 @@
         <rdfs:domain rdf:resource="https://w3id.org/dcso#grant_id"/>
         <rdfs:domain rdf:resource="https://w3id.org/dcso#metadata_standard_id"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/identifier</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/identifier</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#identifier_type -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#identifier_type">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contact_id"/>
@@ -4783,88 +4724,80 @@
 
     <!-- https://w3id.org/dcso#issued -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#issued">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/issued</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/issued</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#keyword -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#keyword">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/dcat#keyword</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/dcat#keyword</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#language -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#language">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
         <rdfs:domain rdf:resource="https://w3id.org/dcso#metadata_standard"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#iso639-3_values"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/language</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/language</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#licence_ref -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#licence_ref">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#license"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://jats.nlm.nih.gov/archiving/tag-library/1.2/element/ali-license_ref.html</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://jats.nlm.nih.gov/archiving/tag-library/1.2/element/ali-license_ref.html</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#mbox -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#mbox">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contact"/>
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contributor"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://xmlns.com/foaf/0.1/mbox</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://xmlns.com/foaf/0.1/mbox</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#modified -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#modified">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/modified</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/modified</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#name -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#name">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contact"/>
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contributor"/>
         <rdfs:domain rdf:resource="https://w3id.org/dcso#technical_resource"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://xmlns.com/foaf/0.1/name</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://xmlns.com/foaf/0.1/name</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#personal_data -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#personal_data">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
@@ -4875,7 +4808,6 @@
 
     <!-- https://w3id.org/dcso#pid_system -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#pid_system">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#pid_system_values"/>
@@ -4884,7 +4816,6 @@
 
 
     <!-- https://w3id.org/dcso#preservation_statement -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#preservation_statement">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
@@ -4895,7 +4826,6 @@
 
     <!-- https://w3id.org/dcso#report -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#report">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dmp"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -4904,7 +4834,6 @@
 
 
     <!-- https://w3id.org/dcso#role -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#role">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#contributor"/>
@@ -4915,7 +4844,6 @@
 
     <!-- https://w3id.org/dcso#sensitive_data -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#sensitive_data">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#yesNoUnknownVocabulary"/>
@@ -4924,7 +4852,6 @@
 
 
     <!-- https://w3id.org/dcso#start -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#start">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#project"/>
@@ -4935,7 +4862,6 @@
 
     <!-- https://w3id.org/dcso#start_date -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#start_date">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#license"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
@@ -4944,7 +4870,6 @@
 
 
     <!-- https://w3id.org/dcso#storage_type -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#storage_type">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
@@ -4955,7 +4880,6 @@
 
     <!-- https://w3id.org/dcso#support_versioning -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#support_versioning">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
         <rdfs:range rdf:resource="https://w3id.org/dcso#yesNoUnknownVocabulary"/>
@@ -4964,7 +4888,6 @@
 
 
     <!-- https://w3id.org/dcso#title -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#title">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#cost"/>
@@ -4975,13 +4898,12 @@
         <rdfs:domain rdf:resource="https://w3id.org/dcso#project"/>
         <rdfs:domain rdf:resource="https://w3id.org/dcso#security_and_privacy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/title</hasCrossReference>
+        <rda-common-dmp1:hasCrossReference rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.org/dc/terms/title</rda-common-dmp1:hasCrossReference>
     </owl:DatatypeProperty>
     
 
 
     <!-- https://w3id.org/dcso#type -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#type">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#dataset"/>
@@ -4992,7 +4914,6 @@
 
     <!-- https://w3id.org/dcso#url -->
 
-
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#url">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#host"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
@@ -5001,7 +4922,6 @@
 
 
     <!-- https://w3id.org/dcso#value -->
-
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/dcso#value">
         <rdfs:domain rdf:resource="https://w3id.org/dcso#cost"/>
@@ -5018,12 +4938,10 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
     
 
 
     <!-- https://w3id.org/dcso#contact -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#contact">
         <rdfs:subClassOf>
@@ -5046,7 +4964,6 @@
 
     <!-- https://w3id.org/dcso#contact_id -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#contact_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5067,7 +4984,6 @@
 
 
     <!-- https://w3id.org/dcso#contributor -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#contributor">
         <rdfs:subClassOf>
@@ -5097,7 +5013,6 @@
 
     <!-- https://w3id.org/dcso#contributor_id -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#contributor_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5118,7 +5033,6 @@
 
 
     <!-- https://w3id.org/dcso#cost -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#cost">
         <rdfs:subClassOf>
@@ -5154,7 +5068,6 @@
 
 
     <!-- https://w3id.org/dcso#dataset -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#dataset">
         <rdfs:subClassOf>
@@ -5225,7 +5138,6 @@
 
     <!-- https://w3id.org/dcso#dataset_id -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#dataset_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5239,7 +5151,6 @@
 
 
     <!-- https://w3id.org/dcso#distribution -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#distribution">
         <rdfs:subClassOf>
@@ -5303,7 +5214,6 @@
 
 
     <!-- https://w3id.org/dcso#dmp -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#dmp">
         <rdfs:subClassOf>
@@ -5382,7 +5292,6 @@
 
     <!-- https://w3id.org/dcso#dmp_id -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#dmp_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5403,7 +5312,6 @@
 
 
     <!-- https://w3id.org/dcso#funder_id -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#funder_id">
         <rdfs:subClassOf>
@@ -5426,7 +5334,6 @@
 
     <!-- https://w3id.org/dcso#funding -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#funding">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5440,7 +5347,6 @@
 
 
     <!-- https://w3id.org/dcso#grant_id -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#grant_id">
         <rdfs:subClassOf>
@@ -5462,7 +5368,6 @@
 
 
     <!-- https://w3id.org/dcso#host -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#host">
         <rdfs:subClassOf>
@@ -5546,7 +5451,6 @@
 
     <!-- https://w3id.org/dcso#license -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#license">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5567,7 +5471,6 @@
 
 
     <!-- https://w3id.org/dcso#metadata_standard -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#metadata_standard">
         <rdfs:subClassOf>
@@ -5590,7 +5493,6 @@
 
     <!-- https://w3id.org/dcso#metadata_standard_id -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#metadata_standard_id">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5611,7 +5513,6 @@
 
 
     <!-- https://w3id.org/dcso#project -->
-
 
     <owl:Class rdf:about="https://w3id.org/dcso#project">
         <rdfs:subClassOf>
@@ -5648,7 +5549,6 @@
 
     <!-- https://w3id.org/dcso#security_and_privacy -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#security_and_privacy">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5670,7 +5570,6 @@
 
     <!-- https://w3id.org/dcso#technical_resource -->
 
-
     <owl:Class rdf:about="https://w3id.org/dcso#technical_resource">
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -5687,610 +5586,9 @@
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Individuals
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    
-
-
-    <!-- https://w3id.org/dcso#contact0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contact0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contact"/>
-        <mbox>rleite@igc.gulbenkian.pt</mbox>
-        <name>Ricardo Leite</name>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contact0contact_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contact0contact_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contact_id"/>
-        <hasContact_id rdf:resource="https://w3id.org/dcso#contact0"/>
-        <identifier>https://orcid.org/0000-0002-9622-3895</identifier>
-        <identifier_type>ORCID</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor"/>
-        <mbox>rleite@igc.gulbenkian.pt</mbox>
-        <name>Ricardo Leite</name>
-        <role>ProjectLeader</role>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor0contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor0contributor_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor_id"/>
-        <hasContributor_id rdf:resource="https://w3id.org/dcso#contributor0"/>
-        <identifier>https://orcid.org/0000-0002-9622-3895</identifier>
-        <identifier_type>ORCID</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor1">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor"/>
-        <mbox>cpenha@igc.gulbenkian.pt</mbox>
-        <name>Carlos Penha-Gonçalves</name>
-        <role>RelatedPerson </role>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor1contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor1contributor_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor_id"/>
-        <hasContributor_id rdf:resource="https://w3id.org/dcso#contributor1"/>
-        <identifier>https://orcid.org/0000-0001-7225-1907</identifier>
-        <identifier_type>ORCID</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor2 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor2">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor"/>
-        <mbox>jsobral@igc.gulbenkian.pt</mbox>
-        <name>João Sobral</name>
-        <role>DataCollector </role>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor2contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor2contributor_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor_id"/>
-        <hasContributor_id rdf:resource="https://w3id.org/dcso#contributor2"/>
-        <identifier>https://orcid.org/0000-0002-7161-0661</identifier>
-        <identifier_type>ORCID</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor3 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor3">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor"/>
-        <mbox>sladeiro@igc.gulbenkian.pt</mbox>
-        <name>Susana Ladeiro</name>
-        <role>DataCollector </role>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor3contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor3contributor_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor_id"/>
-        <hasContributor_id rdf:resource="https://w3id.org/dcso#contributor3"/>
-        <identifier>https://orcid.org/0000-0003-4333-2008</identifier>
-        <identifier_type>ORCID</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor4 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor4">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor"/>
-        <mbox>jcosta@igc.gulbenkian.pt</mbox>
-        <name>João Costa</name>
-        <role>DataCollector </role>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#contributor4contributor_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#contributor4contributor_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#contributor_id"/>
-        <hasContributor_id rdf:resource="https://w3id.org/dcso#contributor4"/>
-        <identifier>https://orcid.org/0000-0003-3590-5849</identifier>
-        <identifier_type>ORCID</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#cost0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#cost0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#cost"/>
-        <currency_code>eur</currency_code>
-        <description>The cost of buying and maintaining equipment for the laboratory.</description>
-        <title>Equipment</title>
-        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#cost1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#cost1">
-        <rdf:type rdf:resource="https://w3id.org/dcso#cost"/>
-        <currency_code>eur</currency_code>
-        <description>The cost of maintaining the facilities.</description>
-        <title>Facilities</title>
-        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#cost2 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#cost2">
-        <rdf:type rdf:resource="https://w3id.org/dcso#cost"/>
-        <currency_code>eur</currency_code>
-        <description>The personnel monthly wages</description>
-        <title>Personnel</title>
-        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#cost3 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#cost3">
-        <rdf:type rdf:resource="https://w3id.org/dcso#cost"/>
-        <currency_code>eur</currency_code>
-        <description>The cost of reagents used in the process.</description>
-        <title>Reagent</title>
-        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#cost4 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#cost4">
-        <rdf:type rdf:resource="https://w3id.org/dcso#cost"/>
-        <currency_code>eur</currency_code>
-        <description>The cost of using external services for sequencing DNA or RNA</description>
-        <title>External Services</title>
-        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#cost5 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#cost5">
-        <rdf:type rdf:resource="https://w3id.org/dcso#cost"/>
-        <currency_code>eur</currency_code>
-        <description>The cost of storaging the data produced in the projects.</description>
-        <title>Storage</title>
-        <value rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</value>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#dataset"/>
-        <hasDistribution rdf:resource="https://w3id.org/dcso#dataset0distribution0"/>
-        <hasSecurity_and_privacy rdf:resource="https://w3id.org/dcso#dataset0security_and_privacy0"/>
-        <hasTechnical_resource rdf:resource="https://w3id.org/dcso#dataset0technical_resource0"/>
-        <data_quality_assurance>RIM and DIM for RNA and DNA QC</data_quality_assurance>
-        <description>Quality Control of DNA and RNA</description>
-        <issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></issued>
-        <personal_data>No</personal_data>
-        <preservation_statement>Keep record</preservation_statement>
-        <sensitive_data>No</sensitive_data>
-        <title>Quality Check QC</title>
-        <type>http://purl.org/coar/resource_type/c_18gh</type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset0dataset_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset0dataset_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#dataset_id"/>
-        <hasDataset_id rdf:resource="https://w3id.org/dcso#dataset0"/>
-        <identifier>https://www.doi.org/</identifier>
-        <identifier_type>DOI</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset0distribution0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset0distribution0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#distribution"/>
-        <hasHost rdf:resource="https://w3id.org/dcso#dataset0distribution0host0"/>
-        <access_url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"></access_url>
-        <available_until rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-01T00:00:00</available_until>
-        <dataAccess>Shared</dataAccess>
-        <description>Files will be stored in xls and pfd in the storage server (AFS)</description>
-        <download_url rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"></download_url>
-        <format>application/pdf</format>
-        <title>Quality control file</title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset0distribution0host0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset0distribution0host0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#host"/>
-        <backup_frequency>daily</backup_frequency>
-        <backup_type>hard drive</backup_type>
-        <description>Storage server (AFS) managed by IGC IT</description>
-        <geo_location>PT</geo_location>
-        <support_versioning>No</support_versioning>
-        <title></title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset0security_and_privacy0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset0security_and_privacy0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#security_and_privacy"/>
-        <description>Only staff can directly access data. Users can access pending a request approval.</description>
-        <title>Access</title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset0technical_resource0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset0technical_resource0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#technical_resource"/>
-        <description>It checks the QC of nucleic acids</description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset1">
-        <rdf:type rdf:resource="https://w3id.org/dcso#dataset"/>
-        <hasMetadata_standard rdf:resource="https://w3id.org/dcso#dataset1metadata_standard0"/>
-        <hasTechnical_resource rdf:resource="https://w3id.org/dcso#dataset1technical_resource0"/>
-        <hasTechnical_resource rdf:resource="https://w3id.org/dcso#dataset1technical_resource1"/>
-        <data_quality_assurance>CRC checksum</data_quality_assurance>
-        <description>Fastq files of DNA/RNA sequencing</description>
-        <issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime"></issued>
-        <personal_data>No</personal_data>
-        <preservation_statement>The data will stay storage because users can always request it.</preservation_statement>
-        <sensitive_data>No</sensitive_data>
-        <title>DNA &amp; RNA fastq</title>
-        <type>http://purl.org/coar/resource_type/c_18gh</type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset1metadata_standard0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset1metadata_standard0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#metadata_standard"/>
-        <description>Used index and sample name (sample sheet)</description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset1metadata_standard0metadata_standard_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset1metadata_standard0metadata_standard_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#metadata_standard_id"/>
-        <hasMetadata_standard_id rdf:resource="https://w3id.org/dcso#dataset1metadata_standard0"/>
-        <identifier>https://www.illumina.com/content/dam/illumina-marketing/documents/products/technotes/sequencing-sheet-format-specifications-technical-note-970-2017-004.pdf</identifier>
-        <identifier_type>URL</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset1technical_resource0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset1technical_resource0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#technical_resource"/>
-        <description>Ilumina sequencer https://www.illumina.com/systems/sequencing-platforms/miseq.html</description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dataset1technical_resource1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dataset1technical_resource1">
-        <rdf:type rdf:resource="https://w3id.org/dcso#technical_resource"/>
-        <description>NextSeq sequencer Illumina  https://www.illumina.com/systems/sequencing-platforms/nextseq.html</description>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dmp0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dmp0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#dmp"/>
-        <hasContact rdf:resource="https://w3id.org/dcso#contact0"/>
-        <hasContributor rdf:resource="https://w3id.org/dcso#contributor0"/>
-        <hasContributor rdf:resource="https://w3id.org/dcso#contributor1"/>
-        <hasContributor rdf:resource="https://w3id.org/dcso#contributor2"/>
-        <hasContributor rdf:resource="https://w3id.org/dcso#contributor3"/>
-        <hasContributor rdf:resource="https://w3id.org/dcso#contributor4"/>
-        <hasCost rdf:resource="https://w3id.org/dcso#cost0"/>
-        <hasCost rdf:resource="https://w3id.org/dcso#cost1"/>
-        <hasCost rdf:resource="https://w3id.org/dcso#cost2"/>
-        <hasCost rdf:resource="https://w3id.org/dcso#cost3"/>
-        <hasCost rdf:resource="https://w3id.org/dcso#cost4"/>
-        <hasCost rdf:resource="https://w3id.org/dcso#cost5"/>
-        <hasDataset rdf:resource="https://w3id.org/dcso#dataset0"/>
-        <hasDataset rdf:resource="https://w3id.org/dcso#dataset1"/>
-        <hasProject rdf:resource="https://w3id.org/dcso#project0"/>
-        <hasProject rdf:resource="https://w3id.org/dcso#project1"/>
-        <created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-18T00:00:00</created>
-        <description>This DMP serves to characterize the functioning of the Unidade de Genómica at the Instituto Gulbenkian para a Ciência in Oeiras.</description>
-        <ethical_issues_exist>Unknown</ethical_issues_exist>
-        <modified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-18T00:00:00</modified>
-        <title>Unidade de Genómica</title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#dmp0dmp_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#dmp0dmp_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#dmp_id"/>
-        <hasDmp_id rdf:resource="https://w3id.org/dcso#dmp0"/>
-        <identifier>https://www.dropbox.com/s/rfu5nyo0s1wx9ju/DMP.Unidade.Genomica.1.0.json?dl=0</identifier>
-        <identifier_type>URL</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#project"/>
-        <hasFunding rdf:resource="https://w3id.org/dcso#project0funding0"/>
-        <hasFunding rdf:resource="https://w3id.org/dcso#project0funding1"/>
-        <hasFunding rdf:resource="https://w3id.org/dcso#project0funding2"/>
-        <description>ONEIDA is a consortium established between Instituto de Tecnologia Química e Biológica António Xavier (ITQB NOVA), Instituto Gulbenkian de Ciência (IGC) and Instituto de Medicina Molecular (iMM) to match the urgent need for effective solutions in the prevention and control of infectious diseases and ­antibiotic resistance.</description>
-        <end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-12-31T00:00:00</end>
-        <start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-01-01T00:00:00</start>
-        <title>ONEIDA</title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funding"/>
-        <funding_status>Granted</funding_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding0funder_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding0funder_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funder_id"/>
-        <hasFunder_id rdf:resource="https://w3id.org/dcso#project0funding0"/>
-        <identifier>http://dx.doi.org/10.13039/501100000780</identifier>
-        <identifier_type>DOI</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding0grant_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding0grant_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#grant_id"/>
-        <hasGrant_id rdf:resource="https://w3id.org/dcso#project0funding0"/>
-        <identifier>03/SAICT/2015</identifier>
-        <identifier_type>Grant code</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding1">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funding"/>
-        <funding_status>Granted</funding_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding1funder_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding1funder_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funder_id"/>
-        <hasFunder_id rdf:resource="https://w3id.org/dcso#project0funding1"/>
-        <identifier>http://dx.doi.org/10.13039/501100005635</identifier>
-        <identifier_type>DOI</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding1grant_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding1grant_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#grant_id"/>
-        <hasGrant_id rdf:resource="https://w3id.org/dcso#project0funding1"/>
-        <identifier>LISBOA-01-0145-FEDER-016417 </identifier>
-        <identifier_type>Operation Code</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding2 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding2">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funding"/>
-        <funding_status>Granted</funding_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding2funder_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding2funder_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funder_id"/>
-        <hasFunder_id rdf:resource="https://w3id.org/dcso#project0funding2"/>
-        <identifier>http://dx.doi.org/10.13039/501100001871</identifier>
-        <identifier_type>DOI</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project0funding2grant_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project0funding2grant_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#grant_id"/>
-        <hasGrant_id rdf:resource="https://w3id.org/dcso#project0funding2"/>
-        <identifier>LISBOA-01-0145-FEDER-016417 </identifier>
-        <identifier_type>Operation Code</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project1">
-        <rdf:type rdf:resource="https://w3id.org/dcso#project"/>
-        <hasFunding rdf:resource="https://w3id.org/dcso#project1funding0"/>
-        <description>GenomePT aims to enhance the participation of Portuguese scientists in national and international genome projects, and promote genome research in important areas such as health, drug discovery, environment, marine resources, freshwater and biotechnology (agri-food, green chemistry).</description>
-        <end rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-05-30T00:00:00</end>
-        <start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2017-06-01T00:00:00</start>
-        <title> GenomePT – National Laboratory for Genome Sequencing and Analysis </title>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project1funding0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project1funding0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funding"/>
-        <funding_status>Granted</funding_status>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project1funding0funder_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project1funding0funder_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funder_id"/>
-        <hasFunder_id rdf:resource="https://w3id.org/dcso#project1funding0"/>
-        <identifier>http://dx.doi.org/10.13039/501100000780</identifier>
-        <identifier_type>DOI</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project1funding0funder_id1 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project1funding0funder_id1">
-        <rdf:type rdf:resource="https://w3id.org/dcso#funder_id"/>
-        <hasFunder_id rdf:resource="https://w3id.org/dcso#project1funding0"/>
-        <identifier>http://dx.doi.org/10.13039/501100005635</identifier>
-        <identifier_type>DOI</identifier_type>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/dcso#project1funding0grant_id0 -->
-
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/dcso#project1funding0grant_id0">
-        <rdf:type rdf:resource="https://w3id.org/dcso#grant_id"/>
-        <hasGrant_id rdf:resource="https://w3id.org/dcso#project1funding0"/>
-        <identifier>POCI-01-0145-FEDER-022184</identifier>
-        <identifier_type>Grant Code</identifier_type>
-    </owl:NamedIndividual>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.4) https://github.com/owlcs/owlapi/ -->
-
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
