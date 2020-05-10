@@ -105,6 +105,7 @@ public class App
             File ontologyOut = new File(resourcePath + "/newOntology.owl");
             OntologyOperations.saveOntology(ontologyOut, ontology, manager);
 
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
